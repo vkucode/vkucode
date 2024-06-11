@@ -1,0 +1,14 @@
+.homePage{
+    @apply w-screen h-screen flex flex-col text-white justify-center items-center;
+    background: radial-gradient(circle, #431D74 0%, #080119 100%);
+    h1{
+        @apply uppercase text-6xl;
+        font-family: 'MadeOuterThin';
+        font-weight: 250;
+        line-height: 60.19px;
+        letter-spacing: 0.4em;
+        text-align: center;
+    }
+
+
+}
