@@ -1,14 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 .homePage{
-    @apply w-screen h-screen flex flex-col text-white justify-center items-center;
-    background: radial-gradient(circle, #431D74 0%, #080119 100%);
-    h1{
-        @apply uppercase text-6xl;
-        font-family: 'MadeOuterThin';
-        font-weight: 250;
-        line-height: 60.19px;
-        letter-spacing: 0.4em;
-        text-align: center;
+    @apply w-full h-auto absolute z-10 flex flex-col text-white;
+    .background{
+        @apply fixed z-0 w-screen h-screen;
+        background-repeat: no-repeat;
+        background: radial-gradient(60.42% 48.27% at 50% 51.73%, #431D74 0%, #080119 100%);
+        background-position: center center;
     }
-
-
+    h1 {
+        @apply uppercase text-7xl text-center;
+        font-family: 'Lexend Zetta';
+        letter-spacing: 0.4rem;
+        line-height: 87.5px;
+        background: linear-gradient(100.39deg, #ECE6FF 15.23%, #CFB9EC 81.52%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h2 {
+        @apply uppercase text-center text-4xl;
+        font-family: 'Lexend Zetta';
+        letter-spacing: 0.4rem;
+        line-height: 43.75px;
+        background: linear-gradient(132.31deg, #F7EFFF -21.6%, #E1C4FE 77.41%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p{
+        @apply text-lg text-center mt-5 max-w-6xl; 
+        font-family: 'Lexend Zetta';
+        line-height: 42.24px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        background: linear-gradient(132.31deg, #F7EFFF -21.6%, #E1C4FE 77.41%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
 }

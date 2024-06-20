@@ -1,0 +1,83 @@
+.bandSection{
+    @apply relative left-0 flex flex-row justify-center py-2 items-center;
+    .bandDivLeft{
+        @apply flex relative right-0 flex-row flex-nowrap w-full gap-5 justify-center items-center;
+        animation: animateBandLeft 40s infinite linear;
+        @keyframes animateBandLeft {
+            0%{
+                right: 0%;
+            }
+            100%{
+                right: 90%
+            }
+        }
+        span{
+            @apply uppercase text-3xl;
+            font-family: 'MadeOuter';
+            background: linear-gradient(90deg, #EEDDFF 0%, #A281C3 100%);
+            letter-spacing: 0.4rem;
+            line-height: 40.22px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .bandDivRight{
+        @apply flex relative right-0 flex-row flex-nowrap w-full gap-5 justify-center items-center;
+        animation: animateBandRight 40s infinite linear;
+        @keyframes animateBandRight {
+            0%{
+                right: 90%;
+            }
+            100%{
+                right: 0%
+            }
+        }
+        span{
+            @apply uppercase text-3xl;
+            font-family: 'MadeOuter';
+            background: linear-gradient(90deg, #EEDDFF 0%, #A281C3 100%);
+            letter-spacing: 0.4rem;
+            line-height: 40.22px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+.cardsSection{
+    @apply flex flex-row gap-5 justify-center items-center;
+    .cardExpertise{
+        @apply flex flex-col justify-center items-center uppercase;
+        box-shadow: 0px 5px 47px 0px #CD8EFF4D;
+        background: rgba($color: #341F4E, $alpha: 0.5);
+        border: 1px solid;
+        border-image-source: linear-gradient(180deg, #FFFFFF -6.67%, rgba(30, 11, 49, 0) 15.36%, rgba(30, 11, 49, 0) 78.27%, #FFFFFF 108.89%);
+        img{
+            @apply w-[200px];
+            width: 163.54px;
+            height: 159.76px;
+            top: -36.59px;
+            left: 36px;
+            gap: 0px;
+            opacity: 0px;
+        }
+        .icond3d{
+            @apply scale-90 border-2;
+        }
+        h1{
+            font-size: 24px;
+            font-weight: 250;
+            line-height: 30.1px;
+            letter-spacing: 0.2em;
+            text-align: center;
+
+        }
+        p{
+            font-size: 12px;
+            font-weight: 250;
+            line-height: 15.05px;
+            letter-spacing: 0.15em;
+            text-align: center;
+
+        }
+    }
+}
