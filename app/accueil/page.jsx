@@ -22,9 +22,9 @@ export default function HomePage() {
     const Model = ({ scale }) => {
         const modelRef = useRef();
         const textures = useLoader(TextureLoader, [
-            "/models/vkucodelogo/texture1.jpg",
-            "/models/vkucodelogo/texture2.jpg",
-            "/models/vkucodelogo/texture3.jpg",
+            "/models/vkucodeLogo/texture1.jpg",
+            "/models/vkucodeLogo/texture2.jpg",
+            "/models/vkucodeLogo/texture3.jpg",
         ]);
         const model = useLoader(GLTFLoader, model3d);
 
