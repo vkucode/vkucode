@@ -11,10 +11,10 @@ export default function Expertise(){
             <div className={styles.cardExpertise}>
                 {/* <Image src={srcIcon} width={300} height={300} /> */}
             
-                    <Spline
+                    {/* <Spline
                         className="icond3d"
                         scene={srcIcon} 
-                    />
+                    /> */}
                 
                 <h1>{title}</h1>
                 <p>{text}</p>

@@ -35,5 +35,11 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
+
+}
+.headerPage{
+    @apply flex flex-col justify-center items-center h-screen w-full z-10;
+}
+.objetCanvas{
+    @apply z-10 w-full h-[30vh];
 }
