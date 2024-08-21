@@ -1,45 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
-.homePage{
-    @apply w-full h-auto absolute z-10 flex flex-col text-white;
-    .background{
-        @apply fixed z-0 w-screen h-screen;
-        background-repeat: no-repeat;
-        background: radial-gradient(60.42% 48.27% at 50% 51.73%, #431D74 0%, #080119 100%);
-        background-position: center center;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&display=swap');
+
+// .accueilPage{
+//     @apply bg-[var(--color-bg-black)];
+// }
+// Intro Page Section
+.introPage{
+    @apply fixed w-screen h-dvh flex flex-col justify-center items-center;
+    img{
+        @apply w-full h-full absolute object-cover -z-20;
     }
-    h1 {
-        @apply uppercase text-7xl text-center;
-        font-family: 'Lexend Zetta';
-        letter-spacing: 0.4rem;
-        line-height: 87.5px;
-        background: linear-gradient(100.39deg, #ECE6FF 15.23%, #CFB9EC 81.52%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    video{
+        @apply relative -z-10 w-[600px] h-auto;
     }
-    h2 {
-        @apply uppercase text-center text-4xl;
-        font-family: 'Lexend Zetta';
-        letter-spacing: 0.4rem;
-        line-height: 43.75px;
-        background: linear-gradient(132.31deg, #F7EFFF -21.6%, #E1C4FE 77.41%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+}
+
+// Header Page Section
+.headerAccueil{
+    @apply w-screen h-auto relative flex flex-col justify-center items-center bg-[var(--color-bg-black)] mix-blend-multiply;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    div{
+        h1{
+            @apply uppercase font-bold text-[150px] text-center text-white;
+            font-family: 'Thunder';
+            line-height: 1;
+            transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+            span{
+                @apply uppercase text-[var(--color-main)];
+            }
+        }
     }
-    p{
-        @apply text-lg text-center mt-5 max-w-6xl; 
-        font-family: 'Lexend Zetta';
-        line-height: 42.24px;
-        font-weight: 600;
-        letter-spacing: 0.1em;
-        background: linear-gradient(132.31deg, #F7EFFF -21.6%, #E1C4FE 77.41%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    .textHeader{
+        @apply relative w-full max-w-7xl h-fit py-20 px-10;
+        .bgImg{
+            @apply w-full h-full absolute z-0;
+        }
+        .carteImgs{
+            @apply relative z-10 w-full max-w-[350px] h-auto;
+            
+        }
+        .contentCarte{
+            @apply relative z-10 text-[#EDEDED] ml-10;
+                h3{
+                    @apply uppercase w-fit py-1 bg-[#55367E] bg-opacity-30 rounded-3xl border-[1px] border-[#B787F5] px-5;
+                    letter-spacing: 1.5px;
+                    font-family: 'Orbitron';
+                }
+                h2{
+                    @apply  text-4xl mt-10 font-black;
+                    font-family: 'DM Sans';
+                    span{
+                       @apply text-[#B787F5]; 
+                    }
+                }
+                p{
+                    @apply text-[#727885] font-normal text-xl mb-10 mt-5;
+                    font-family: 'DM Sans';
+                    span{
+                        @apply text-[#fff] ml-10;
+                    }
+                }
+                a{
+                    @apply uppercase text-lg font-normal bg-gradient-to-b from-[#B787F5] to-[#55367E] rounded-3xl py-2 px-5 mt-10;
+                    font-family: 'DM Sans';
+                }
+        }
     }
 
 }
-.headerPage{
-    @apply flex flex-col justify-center items-center h-screen w-full z-10;
+
+// TEXT BAND 
+
+.textBand{
+    @apply bg-[var(--color-bg-black)] w-full overflow-x-hidden h-[150px] py-1 flex flex-col justify-center items-center text-[#EDEDED];
+    div{
+        @apply relative -ml-[100%];
+        animation: textRoll 30s infinite linear;    
+        h1{
+            @apply uppercase font-bold text-6xl;
+            letter-spacing: 1.5px;
+            font-family: 'Thunder';
+                span{
+                    @apply text-[var(--color-main)];
+                }
+            }
+        }
+    }
+@keyframes textRoll {
+    0%{
+        margin-left: -100%;
+    }
+    100%{
+        margin-left: 100%;
+    }
 }
-.objetCanvas{
-    @apply z-10 w-full h-[30vh];
+
+// Smart Development
+.smartDev{
+    @apply bg-[var(--color-bg-black)] w-full pt-10 pb-32 flex flex-col justify-center items-center;
+    .headerSmart{
+        @apply flex flex-col justify-center items-center w-full max-w-7xl;
+        h2{
+            @apply text-[#EDEDED] uppercase text-5xl text-center;
+            font-family: 'Orbitron';
+            span{
+                @apply text-[var(--color-main)];
+            }
+        }
+        h1{
+            @apply uppercase font-bold text-9xl text-[#EDEDED] mt-4;
+            font-family: 'Thunder';
+        } 
+    }
+    .smart{
+        @apply flex flex-col lg:flex-row py-10 mt-10 justify-center items-center w-full max-w-7xl;
+        .smartText{
+            @apply flex w-full flex-col justify-center items-start text-[#EDEDED];
+            h3{
+                @apply uppercase w-fit py-1 bg-[#55367E] bg-opacity-30 rounded-3xl border-[1px] border-[#B787F5] px-5;
+                letter-spacing: 1.5px;
+                font-family: 'Orbitron';
+            }
+            h2{
+                @apply  text-4xl mt-10 font-black;
+                font-family: 'DM Sans';
+                span{
+                   @apply text-[#B787F5]; 
+                }
+            }
+            p{
+                @apply text-[#727885] font-normal text-xl mb-10 mt-5;
+                font-family: 'DM Sans';
+                span{
+                    @apply text-[#fff] ml-10;
+                }
+            }
+            a{
+                @apply uppercase text-lg font-normal bg-gradient-to-b from-[#B787F5] to-[#55367E] rounded-3xl py-2 px-5 mt-10;
+                font-family: 'DM Sans';
+            }
+        }
+        .smartCarts{
+            @apply w-full max-w-[700px] relative -mt-10 flex flex-row justify-center items-start;
+        }
+    }
 }

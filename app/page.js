@@ -1,10 +1,6 @@
 import Image from "next/image";
-import HomePage from "./accueil/page";
+import Accueil from "./accueil/page";
 
 export default function Home() {
-  return (
-    <>
-      <HomePage />
-    </>
-  );
+  return <Accueil />;
 }
