@@ -15,6 +15,18 @@ export default function BandText(){
                 <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
                 <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
                 <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
+                <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
+                <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
+                <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
+                <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
+                <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
+                <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
+                <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
+                <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
+                <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
+                <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
+                <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
+                <h1>the&nbsp;sky&nbsp;is&nbsp;not&nbsp;the&nbsp;<span>limit</span>&nbsp;</h1>
                 </div>
             </section>
         </>

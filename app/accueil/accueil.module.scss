@@ -60,7 +60,7 @@
                     }
                 }
                 a{
-                    @apply uppercase text-lg font-normal bg-gradient-to-b from-[#B787F5] to-[#55367E] rounded-3xl py-2 px-5 mt-10;
+                    @apply uppercase text-base font-normal bg-gradient-to-b from-[#B787F5] to-[#55367E] rounded-3xl py-1 px-5 mt-10;
                     font-family: 'DM Sans';
                 }
         }
@@ -135,7 +135,7 @@
                 }
             }
             a{
-                @apply uppercase text-lg font-normal bg-gradient-to-b from-[#B787F5] to-[#55367E] rounded-3xl py-2 px-5 mt-10;
+                @apply uppercase text-base font-normal bg-gradient-to-b from-[#B787F5] to-[#55367E] rounded-3xl py-1 px-5 mt-10;
                 font-family: 'DM Sans';
             }
         }
@@ -144,3 +144,57 @@
         }
     }
 }
+
+// Partners Section 
+
+.partnersBand{
+    @apply flex flex-col w-full justify-center gap-5 pt-10 pb-20 items-center bg-[var(--color-bg-black)];
+    .partnersHeader{
+        @apply flex flex-col justify-center items-center;
+        h1{
+            @apply text-[#EDEDED] font-extrabold text-8xl opacity-80 uppercase;
+            font-family: 'Thunder';
+            letter-spacing: 1.5px;
+        }
+        h2{
+            @apply uppercase text-[#EDEDED] text-4xl opacity-80;
+            font-family: 'Orbitron';
+            span{
+                @apply text-[var(--color-main)];
+            }
+        }
+    }
+    .forward{
+        @apply flex -ml-[100%] mt-10 flex-row justify-center items-center gap-10;
+        animation: forwardBand 60s infinite linear;
+        img{
+            @apply w-auto h-full max-h-[60px];
+        }
+    }
+    .backward{
+        @apply flex -mr-[100%] flex-row justify-center items-center gap-10;
+        animation: backwardBand 60s infinite linear;
+        img{
+            @apply w-auto h-full max-h-[60px];
+        }
+    }
+}
+
+@keyframes forwardBand {
+    0%{
+        margin-left: -100%;
+    }
+    100%{
+        margin-left: 100%;
+    }
+}
+
+@keyframes backwardBand {
+    0%{
+        margin-right: -100%;
+    }
+    100%{
+        margin-right: 100%;
+    }
+}
+
