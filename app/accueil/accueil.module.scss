@@ -179,7 +179,7 @@
 // Partners Section 
 
 .partnersBand {
-    @apply flex flex-col w-screen justify-center gap-5 pt-10 pb-20 items-center bg-[var(--color-bg-black)];
+    @apply flex flex-col w-screen overflow-hidden justify-center gap-5 pt-10 pb-20 items-center bg-[var(--color-bg-black)];
 
     .partnersHeader {
         @apply flex flex-col justify-center items-center;
