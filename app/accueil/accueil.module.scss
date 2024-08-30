@@ -20,10 +20,9 @@
 .headerAccueil {
     @apply w-screen h-auto relative flex flex-col justify-center items-center bg-[var(--color-bg-black)] mix-blend-multiply;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-
     div {
         h1 {
-            @apply uppercase font-bold text-[150px] text-center text-white;
+            @apply uppercase font-bold text-7xl lg:text-[150px] text-center text-white;
             font-family: 'Thunder';
             line-height: 1;
             transition: transform 0.5s ease-out, opacity 0.5s ease-out;
@@ -42,21 +41,21 @@
         }
 
         .carteImgs {
-            @apply relative z-10 w-full max-w-[350px] h-auto;
+            @apply relative z-10 w-full max-w-[200px] md:max-w-[350px] h-auto;
 
         }
 
         .contentCarte {
-            @apply relative z-10 text-[#EDEDED] ml-10;
+            @apply relative z-10 flex flex-col justify-center items-center md:items-start text-[#EDEDED] ml-0 md:ml-10;
 
             h3 {
-                @apply uppercase w-fit py-1 bg-[#55367E] bg-opacity-30 rounded-3xl border-[1px] border-[#B787F5] px-5;
+                @apply uppercase hidden md:block w-fit py-1 bg-[#55367E] bg-opacity-30 rounded-3xl border-[1px] border-[#B787F5] px-5;
                 letter-spacing: 1.5px;
                 font-family: 'Orbitron';
             }
 
             h2 {
-                @apply text-4xl mt-10 font-black;
+                @apply text-xl md:text-4xl mt-10 font-black text-center md:text-left;
                 font-family: 'DM Sans';
 
                 span {
@@ -65,7 +64,7 @@
             }
 
             p {
-                @apply text-[#727885] font-normal text-xl mb-10 mt-5;
+                @apply text-[#727885] font-normal text-lg md:text-xl text-center md:text-left mb-10 mt-5;
                 font-family: 'DM Sans';
 
                 span {
@@ -74,7 +73,7 @@
             }
 
             a {
-                @apply uppercase text-base font-normal bg-gradient-to-b from-[#B787F5] to-[#55367E] rounded-3xl py-1 px-5 mt-10;
+                @apply uppercase text-sm md:text-base font-normal bg-gradient-to-b from-[#B787F5] to-[#55367E] rounded-3xl py-1 px-5 mt-0 mb-10 md:mb-0 md:mt-5;
                 font-family: 'DM Sans';
             }
         }
@@ -92,7 +91,7 @@
         animation: textRoll 30s infinite linear;
 
         h1 {
-            @apply uppercase font-bold text-6xl;
+            @apply uppercase font-bold text-2xl md:text-6xl;
             letter-spacing: 1.5px;
             font-family: 'Thunder';
 
@@ -121,7 +120,7 @@
         @apply flex flex-col justify-center items-center w-full max-w-7xl;
 
         h2 {
-            @apply text-[#EDEDED] uppercase text-5xl text-center;
+            @apply text-[#EDEDED] uppercase text-3xl md:text-5xl text-center;
             font-family: 'Orbitron';
 
             span {
@@ -130,25 +129,25 @@
         }
 
         h1 {
-            @apply uppercase font-bold text-9xl text-[#EDEDED] mt-4;
+            @apply uppercase font-bold text-7xl md:text-9xl text-[#EDEDED] mt-4;
             font-family: 'Thunder';
         }
     }
 
     .smart {
-        @apply flex flex-col lg:flex-row py-10 mt-10 justify-center items-center w-full max-w-7xl;
+        @apply flex flex-col lg:flex-row py-0 mt-0 md:py-10 md:mt-10 justify-center items-center w-full max-w-7xl;
 
         .smartText {
-            @apply flex w-full flex-col justify-center items-start text-[#EDEDED];
+            @apply flex w-full flex-col justify-center md:items-start items-center text-center md:text-left text-[#EDEDED];
 
             h3 {
-                @apply uppercase w-fit py-1 bg-[#55367E] bg-opacity-30 rounded-3xl border-[1px] border-[#B787F5] px-5;
+                @apply hidden md:block uppercase w-fit py-1 bg-[#55367E] bg-opacity-30 rounded-3xl border-[1px] border-[#B787F5] px-5;
                 letter-spacing: 1.5px;
                 font-family: 'Orbitron';
             }
 
             h2 {
-                @apply text-4xl mt-10 font-black;
+                @apply text-2xl md:text-4xl mt-0 md:mt-10 font-black;
                 font-family: 'DM Sans';
 
                 span {
@@ -157,7 +156,7 @@
             }
 
             p {
-                @apply text-[#727885] font-normal text-xl mb-10 mt-5;
+                @apply text-[#727885] font-normal text-base md:text-xl mb-10 mt-5;
                 font-family: 'DM Sans';
 
                 span {
@@ -166,13 +165,13 @@
             }
 
             a {
-                @apply uppercase text-base font-normal bg-gradient-to-b from-[#B787F5] to-[#55367E] rounded-3xl py-1 px-5 mt-10;
+                @apply uppercase text-sm md:text-base font-normal bg-gradient-to-b from-[#B787F5] to-[#55367E] rounded-3xl py-1 px-5 mt-0 md:mt-5;
                 font-family: 'DM Sans';
             }
         }
 
         .smartCarts {
-            @apply w-full max-w-[700px] relative -mt-10 flex flex-row justify-center items-start;
+            @apply w-full max-w-[400px] md:max-w-[700px] relative mt-10 md:-mt-10 flex flex-row justify-center items-start;
         }
     }
 }
@@ -186,13 +185,13 @@
         @apply flex flex-col justify-center items-center;
 
         h1 {
-            @apply text-[#EDEDED] font-extrabold text-8xl opacity-80 uppercase;
+            @apply text-[#EDEDED] font-extrabold text-3xl md:text-8xl opacity-80 uppercase;
             font-family: 'Thunder';
             letter-spacing: 1.5px;
         }
 
         h2 {
-            @apply uppercase text-[#EDEDED] text-4xl opacity-80;
+            @apply uppercase text-[#EDEDED] text-2xl md:text-4xl opacity-80;
             font-family: 'Orbitron';
 
             span {
@@ -202,20 +201,20 @@
     }
 
     .forward {
-        @apply flex -ml-[100%] mt-10 flex-row justify-center items-center gap-10;
+        @apply flex -ml-[100%] mt-0 md:mt-10 flex-row justify-center items-center gap-5 md:gap-10;
         animation: forwardBand 60s infinite linear;
 
         img {
-            @apply w-auto h-full max-h-[60px] opacity-20 hover:opacity-100 transition-all ease-in-out duration-200;
+            @apply w-auto h-full max-h-[30px] md:max-h-[60px] opacity-20 hover:opacity-100 transition-all ease-in-out duration-200;
         }
     }
 
     .backward {
-        @apply flex -mr-[100%] flex-row justify-center items-center gap-10;
+        @apply flex -mr-[100%] flex-row justify-center items-center gap-5 md:gap-10;
         animation: backwardBand 60s infinite linear;
 
         img {
-            @apply w-auto h-full max-h-[60px] opacity-20 hover:opacity-100 transition-all ease-in-out duration-200;
+            @apply w-auto h-full max-h-[30px] md:max-h-[60px] opacity-20 hover:opacity-100 transition-all ease-in-out duration-200;
         }
     }
 }
@@ -243,9 +242,9 @@
 // Gallery Accuiel Section
 
 .galleryAcc {
-    @apply flex flex-col overflow-hidden relative justify-center items-center w-screen py-10 pb-[100px] min-h-[100vh] bg-[var(--color-bg-black)];
+    @apply flex flex-col overflow-hidden relative justify-center items-center w-screen py-0 md:py-10 md:pb-[100px] bg-[var(--color-bg-black)];
     .devWrapperScreens{
-        @apply relative w-full flex flex-col z-0 justify-center items-center max-w-[1800px] ;
+        @apply relative w-[170%] md:w-full flex flex-col z-0 justify-center items-center max-w-[1800px];
         .galleryDevScreens{
             @apply flex flex-col w-full justify-center items-center gap-5;
             .devScreenList{
@@ -266,12 +265,12 @@
         .galleryHand{
             @apply flex flex-col justify-center items-center relative w-full;
             .handImg{
-                @apply -mt-[30px] z-20 top-0 absolute w-[770px] md:w-[1028.5px] xl:w-[1589.5px] min-w-[770px] md:min-w-[1028.5px] xl:min-w-[1589.5px];
+                @apply -mt-[15px] md:-mt-[30px] z-20 top-0 absolute w-[770px] md:w-[1028.5px] xl:w-[1589.5px] min-w-[770px] md:min-w-[1028.5px] xl:min-w-[1589.5px];
             }
             .handContent{
-                @apply absolute top-0 z-10 mt-[15px] w-[150px] md:w-[200.75px] xl:w-[310.25px] h-[310px] md:h-[423.5px] xl:h-[654.5px];
+                @apply absolute top-0 z-10 mt-[10px] md:mt-[15px] w-[150px] md:w-[200.75px] xl:w-[310.25px] h-[310px] md:h-[423.5px] xl:h-[654.5px];
                 img{
-                    @apply relative top-0 w-[150px] md:w-[200.75px] xl:w-[310.25px] h-[290px] md:h-[403.5px] xl:h-[634.5px];
+                    @apply relative top-0 w-[150px] md:w-[200.75px] xl:w-[310.25px] h-[310px] md:h-[403.5px] xl:h-[634.5px];
                 }
             }
         }
@@ -287,15 +286,15 @@
             .planetDiv{
                 @apply absolute w-full h-full z-0;
                 img{
-                    @apply w-full absolute top-0 -right-[50%];
+                    @apply w-full h-full absolute top-[20%] md:top-0 -right-[50%];
                 }
             }
             .formSection{
-                @apply w-full max-w-4xl rounded-3xl flex flex-col py-20 h-fit justify-center items-center z-10 bg-[#434343] bg-opacity-10 backdrop-blur-xl;
+                @apply w-full max-w-4xl rounded-3xl flex flex-col py-14 md:py-20 h-fit justify-center items-center z-10 bg-[#434343] bg-opacity-10 backdrop-blur-xl;
                 .headerForm{
                     @apply flex flex-col justify-center items-center gap-10 mb-10;
                     h1{
-                        @apply text-white font-black text-4xl;
+                        @apply text-white font-black text-2xl md:text-4xl;
                         font-family: 'DM Sans';
                         letter-spacing: 1.5px;
                         span{
@@ -303,7 +302,7 @@
                         }
                     }
                     a{
-                        @apply text-white uppercase font-normal text-base bg-[#55367E] hover:bg-[#B787F5] hover:px-7 hover:text-[#fff] hover:font-black transition-all ease-in-out duration-200 bg-opacity-20 border-2 border-[#B787F5] py-1 px-5 rounded-3xl; 
+                        @apply text-white uppercase font-normal text-sm md:text-base bg-[#55367E] hover:bg-[#B787F5] hover:px-7 hover:text-[#fff] hover:font-black transition-all ease-in-out duration-200 bg-opacity-20 border-2 border-[#B787F5] py-1 px-5 rounded-3xl; 
                         font-family: 'DM Sans';
                         letter-spacing: 1.5px;
                     }
@@ -313,7 +312,7 @@
                     .separator{
                         @apply flex flex-row justify-center items-center w-full gap-5 text-white;
                         h2{
-                            @apply text-2xl;
+                            @apply text-lg md:text-2xl;
                         }
                         div{
                             @apply h-[1px] w-full bg-[#434343]; 
@@ -321,12 +320,12 @@
                     }
                 }
                 form{
-                    @apply w-full max-w-xl flex flex-col justify-center items-center gap-5;
+                    @apply w-full max-w-xl flex flex-col justify-center items-center gap-5 px-10 md:px-0;
                     div{
                         @apply flex flex-col font-normal text-white w-full justify-center items-start py-2;
                         font-family: 'DM Sans';
                         label{
-                            @apply text-xl ml-3 mb-1;
+                            @apply text-sm md:text-xl ml-3 mb-1;
                         }
                         input{
                             @apply bg-[#0E0E0E] bg-opacity-10 border-[1px] border-[#727885] rounded-3xl py-2 px-4 w-full outline-none;
@@ -336,7 +335,7 @@
                         }
                     }
                     button{
-                        @apply text-white uppercase font-normal text-base bg-[#55367E] hover:bg-[#B787F5] hover:px-10 hover:text-[#fff] hover:font-black transition-all ease-in-out duration-200 bg-opacity-20 border-2 border-[#B787F5] py-1 px-7 rounded-3xl; 
+                        @apply text-white uppercase font-normal text-sm md:text-base bg-[#55367E] hover:bg-[#B787F5] hover:px-10 hover:text-[#fff] hover:font-black transition-all ease-in-out duration-200 bg-opacity-20 border-2 border-[#B787F5] py-1 px-7 rounded-3xl; 
                         font-family: 'DM Sans';
                         letter-spacing: 1.5px;
                     }

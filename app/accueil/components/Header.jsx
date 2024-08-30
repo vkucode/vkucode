@@ -15,7 +15,7 @@ export default function HeaderAccueil(){
                
                 <div className={styles.textHeader}>
                     <Image src="/img/effects/lumiereHeader.png" className={styles.bgImg} width={500} height={500} />
-                    <div className='flex flex-col lg:flex-row justify-center items-center'>
+                    <div className='flex flex-col-reverse lg:flex-row justify-center items-center'>
                         <div className={styles.carteImgs}>
                             <Image src="/img/accueil/header/carte.png" width={400} height={400} />
                             <Image src="/img/accueil/header/cartelogo.png" className='absolute top-0 left-0 hover:-rotate-12 transition-all ease-in-out duration-300' width={350} height={350} />
