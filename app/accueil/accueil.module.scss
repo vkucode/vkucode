@@ -4,65 +4,79 @@
 //     @apply bg-[var(--color-bg-black)];
 // }
 // Intro Page Section
-.introPage{
+.introPage {
     @apply fixed w-screen h-dvh flex flex-col justify-center items-center;
-    img{
+
+    img {
         @apply w-full h-full absolute object-cover -z-20;
     }
-    video{
+
+    video {
         @apply relative -z-10 w-[600px] h-auto;
     }
 }
 
 // Header Page Section
-.headerAccueil{
+.headerAccueil {
     @apply w-screen h-auto relative flex flex-col justify-center items-center bg-[var(--color-bg-black)] mix-blend-multiply;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-    div{
-        h1{
+
+    div {
+        h1 {
             @apply uppercase font-bold text-[150px] text-center text-white;
             font-family: 'Thunder';
             line-height: 1;
             transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-            span{
+
+            span {
                 @apply uppercase text-[var(--color-main)];
             }
         }
     }
-    .textHeader{
+
+    .textHeader {
         @apply relative w-full max-w-7xl h-fit py-20 px-10;
-        .bgImg{
+
+        .bgImg {
             @apply w-full h-full absolute z-0;
         }
-        .carteImgs{
+
+        .carteImgs {
             @apply relative z-10 w-full max-w-[350px] h-auto;
-            
+
         }
-        .contentCarte{
+
+        .contentCarte {
             @apply relative z-10 text-[#EDEDED] ml-10;
-                h3{
-                    @apply uppercase w-fit py-1 bg-[#55367E] bg-opacity-30 rounded-3xl border-[1px] border-[#B787F5] px-5;
-                    letter-spacing: 1.5px;
-                    font-family: 'Orbitron';
+
+            h3 {
+                @apply uppercase w-fit py-1 bg-[#55367E] bg-opacity-30 rounded-3xl border-[1px] border-[#B787F5] px-5;
+                letter-spacing: 1.5px;
+                font-family: 'Orbitron';
+            }
+
+            h2 {
+                @apply text-4xl mt-10 font-black;
+                font-family: 'DM Sans';
+
+                span {
+                    @apply text-[#B787F5];
                 }
-                h2{
-                    @apply  text-4xl mt-10 font-black;
-                    font-family: 'DM Sans';
-                    span{
-                       @apply text-[#B787F5]; 
-                    }
+            }
+
+            p {
+                @apply text-[#727885] font-normal text-xl mb-10 mt-5;
+                font-family: 'DM Sans';
+
+                span {
+                    @apply text-[#fff] ml-10;
                 }
-                p{
-                    @apply text-[#727885] font-normal text-xl mb-10 mt-5;
-                    font-family: 'DM Sans';
-                    span{
-                        @apply text-[#fff] ml-10;
-                    }
-                }
-                a{
-                    @apply uppercase text-base font-normal bg-gradient-to-b from-[#B787F5] to-[#55367E] rounded-3xl py-1 px-5 mt-10;
-                    font-family: 'DM Sans';
-                }
+            }
+
+            a {
+                @apply uppercase text-base font-normal bg-gradient-to-b from-[#B787F5] to-[#55367E] rounded-3xl py-1 px-5 mt-10;
+                font-family: 'DM Sans';
+            }
         }
     }
 
@@ -70,76 +84,94 @@
 
 // TEXT BAND 
 
-.textBand{
-    @apply bg-[var(--color-bg-black)] w-full overflow-x-hidden h-[150px] py-1 flex flex-col justify-center items-center text-[#EDEDED];
-    div{
+.textBand {
+    @apply bg-[var(--color-bg-black)] w-screen overflow-x-hidden h-[80px] py-1 flex flex-col justify-center items-center text-[#EDEDED];
+
+    div {
         @apply relative -ml-[100%];
-        animation: textRoll 30s infinite linear;    
-        h1{
+        animation: textRoll 30s infinite linear;
+
+        h1 {
             @apply uppercase font-bold text-6xl;
             letter-spacing: 1.5px;
             font-family: 'Thunder';
-                span{
-                    @apply text-[var(--color-main)];
-                }
+
+            span {
+                @apply text-[var(--color-main)];
             }
         }
     }
+}
+
 @keyframes textRoll {
-    0%{
+    0% {
         margin-left: -100%;
     }
-    100%{
+
+    100% {
         margin-left: 100%;
     }
 }
 
 // Smart Development
-.smartDev{
-    @apply bg-[var(--color-bg-black)] w-full pt-10 pb-32 flex flex-col justify-center items-center;
-    .headerSmart{
+.smartDev {
+    @apply bg-[var(--color-bg-black)] w-screen pt-10 pb-32 flex flex-col justify-center items-center;
+
+    .headerSmart {
         @apply flex flex-col justify-center items-center w-full max-w-7xl;
-        h2{
+
+        h2 {
             @apply text-[#EDEDED] uppercase text-5xl text-center;
             font-family: 'Orbitron';
-            span{
+
+            span {
                 @apply text-[var(--color-main)];
             }
         }
-        h1{
+
+        h1 {
             @apply uppercase font-bold text-9xl text-[#EDEDED] mt-4;
             font-family: 'Thunder';
-        } 
+        }
     }
-    .smart{
+
+    .smart {
         @apply flex flex-col lg:flex-row py-10 mt-10 justify-center items-center w-full max-w-7xl;
-        .smartText{
+
+        .smartText {
             @apply flex w-full flex-col justify-center items-start text-[#EDEDED];
-            h3{
+
+            h3 {
                 @apply uppercase w-fit py-1 bg-[#55367E] bg-opacity-30 rounded-3xl border-[1px] border-[#B787F5] px-5;
                 letter-spacing: 1.5px;
                 font-family: 'Orbitron';
             }
-            h2{
-                @apply  text-4xl mt-10 font-black;
+
+            h2 {
+                @apply text-4xl mt-10 font-black;
                 font-family: 'DM Sans';
-                span{
-                   @apply text-[#B787F5]; 
+
+                span {
+                    @apply text-[#B787F5];
                 }
             }
-            p{
+
+            p {
                 @apply text-[#727885] font-normal text-xl mb-10 mt-5;
                 font-family: 'DM Sans';
-                span{
+
+                span {
                     @apply text-[#fff] ml-10;
                 }
             }
-            a{
+
+            a {
                 @apply uppercase text-base font-normal bg-gradient-to-b from-[#B787F5] to-[#55367E] rounded-3xl py-1 px-5 mt-10;
                 font-family: 'DM Sans';
             }
         }
-        .smartCarts{
+
+        .smartCarts {
             @apply w-full max-w-[700px] relative -mt-10 flex flex-row justify-center items-start;
         }
     }
@@ -147,54 +179,169 @@
 
 // Partners Section 
 
-.partnersBand{
-    @apply flex flex-col w-full justify-center gap-5 pt-10 pb-20 items-center bg-[var(--color-bg-black)];
-    .partnersHeader{
+.partnersBand {
+    @apply flex flex-col w-screen justify-center gap-5 pt-10 pb-20 items-center bg-[var(--color-bg-black)];
+
+    .partnersHeader {
         @apply flex flex-col justify-center items-center;
-        h1{
+
+        h1 {
             @apply text-[#EDEDED] font-extrabold text-8xl opacity-80 uppercase;
             font-family: 'Thunder';
             letter-spacing: 1.5px;
         }
-        h2{
+
+        h2 {
             @apply uppercase text-[#EDEDED] text-4xl opacity-80;
             font-family: 'Orbitron';
-            span{
+
+            span {
                 @apply text-[var(--color-main)];
             }
         }
     }
-    .forward{
+
+    .forward {
         @apply flex -ml-[100%] mt-10 flex-row justify-center items-center gap-10;
         animation: forwardBand 60s infinite linear;
-        img{
-            @apply w-auto h-full max-h-[60px];
+
+        img {
+            @apply w-auto h-full max-h-[60px] opacity-20 hover:opacity-100 transition-all ease-in-out duration-200;
         }
     }
-    .backward{
+
+    .backward {
         @apply flex -mr-[100%] flex-row justify-center items-center gap-10;
         animation: backwardBand 60s infinite linear;
-        img{
-            @apply w-auto h-full max-h-[60px];
+
+        img {
+            @apply w-auto h-full max-h-[60px] opacity-20 hover:opacity-100 transition-all ease-in-out duration-200;
         }
     }
 }
 
 @keyframes forwardBand {
-    0%{
+    0% {
         margin-left: -100%;
     }
-    100%{
+
+    100% {
         margin-left: 100%;
     }
 }
 
 @keyframes backwardBand {
-    0%{
+    0% {
         margin-right: -100%;
     }
-    100%{
+
+    100% {
         margin-right: 100%;
     }
 }
 
+// Gallery Accuiel Section
+
+.galleryAcc {
+    @apply flex flex-col overflow-hidden relative justify-center items-center w-screen py-10 pb-[100px] min-h-[100vh] bg-[var(--color-bg-black)];
+    .devWrapperScreens{
+        @apply relative w-full flex flex-col z-0 justify-center items-center max-w-[1800px] ;
+        .galleryDevScreens{
+            @apply flex flex-col w-full justify-center items-center gap-5;
+            .devScreenList{
+                @apply flex flex-row w-full justify-center items-center gap-5;
+                li{
+                    @apply w-full;
+                    div{
+                        img{
+                            @apply w-[150px] md:w-[200.75px] xl:w-[310.25px] h-[310px] md:h-[423.5px] xl:h-[654.5px];
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .galleryHandWrapper{
+        @apply absolute flex flex-col mt-0 w-full max-w-[1800px] h-full top-0 left-0 z-20;
+        .galleryHand{
+            @apply flex flex-col justify-center items-center relative w-full;
+            .handImg{
+                @apply -mt-[30px] z-20 top-0 absolute w-[770px] md:w-[1028.5px] xl:w-[1589.5px] min-w-[770px] md:min-w-[1028.5px] xl:min-w-[1589.5px];
+            }
+            .handContent{
+                @apply absolute top-0 z-10 mt-[15px] w-[150px] md:w-[200.75px] xl:w-[310.25px] h-[310px] md:h-[423.5px] xl:h-[654.5px];
+                img{
+                    @apply relative top-0 w-[150px] md:w-[200.75px] xl:w-[310.25px] h-[290px] md:h-[403.5px] xl:h-[634.5px];
+                }
+            }
+        }
+    }
+}
+
+// Accueil Contact Form
+
+.contactFormSection{
+    @apply w-screen h-fit py-28 relative flex flex-col justify-center items-center pt-10 bg-[var(--color-bg-black)] overflow-hidden;
+    .contentFormSection{
+        @apply w-full relative max-w-7xl flex flex-col justify-center items-center;
+            .planetDiv{
+                @apply absolute w-full h-full z-0;
+                img{
+                    @apply w-full absolute top-0 -right-[50%];
+                }
+            }
+            .formSection{
+                @apply w-full max-w-4xl rounded-3xl flex flex-col py-20 h-fit justify-center items-center z-10 bg-[#434343] bg-opacity-10 backdrop-blur-xl;
+                .headerForm{
+                    @apply flex flex-col justify-center items-center gap-10 mb-10;
+                    h1{
+                        @apply text-white font-black text-4xl;
+                        font-family: 'DM Sans';
+                        letter-spacing: 1.5px;
+                        span{
+                            @apply text-[#B787F5];
+                        }
+                    }
+                    a{
+                        @apply text-white uppercase font-normal text-base bg-[#55367E] hover:bg-[#B787F5] hover:px-7 hover:text-[#fff] hover:font-black transition-all ease-in-out duration-200 bg-opacity-20 border-2 border-[#B787F5] py-1 px-5 rounded-3xl; 
+                        font-family: 'DM Sans';
+                        letter-spacing: 1.5px;
+                    }
+                    a:hover{
+                        box-shadow: 0px 0px 20px 2px #fff
+                    }
+                    .separator{
+                        @apply flex flex-row justify-center items-center w-full gap-5 text-white;
+                        h2{
+                            @apply text-2xl;
+                        }
+                        div{
+                            @apply h-[1px] w-full bg-[#434343]; 
+                        }
+                    }
+                }
+                form{
+                    @apply w-full max-w-xl flex flex-col justify-center items-center gap-5;
+                    div{
+                        @apply flex flex-col font-normal text-white w-full justify-center items-start py-2;
+                        font-family: 'DM Sans';
+                        label{
+                            @apply text-xl ml-3 mb-1;
+                        }
+                        input{
+                            @apply bg-[#0E0E0E] bg-opacity-10 border-[1px] border-[#727885] rounded-3xl py-2 px-4 w-full outline-none;
+                        }
+                        textarea{
+                            @apply bg-[#0E0E0E] bg-opacity-10 min-h-[150px] border-[1px] border-[#727885] rounded-3xl py-2 px-4 w-full outline-none;
+                        }
+                    }
+                    button{
+                        @apply text-white uppercase font-normal text-base bg-[#55367E] hover:bg-[#B787F5] hover:px-10 hover:text-[#fff] hover:font-black transition-all ease-in-out duration-200 bg-opacity-20 border-2 border-[#B787F5] py-1 px-7 rounded-3xl; 
+                        font-family: 'DM Sans';
+                        letter-spacing: 1.5px;
+                    }
+                }
+
+            }
+    }
+}

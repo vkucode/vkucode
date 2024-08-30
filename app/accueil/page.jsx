@@ -7,6 +7,8 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import SmartDevelopment from './components/SmartDevelopment'
 import Partners from './components/Partners'
+import GalleryAcc from './components/GalleryAcc'
+import AccContactForm from './components/AccContactForm'
 
 export default function Accueil() {
 
@@ -18,6 +20,9 @@ export default function Accueil() {
                 <BandText />
                 <SmartDevelopment />
                 <Partners />
+                <GalleryAcc />
+                <BandText />
+                <AccContactForm />
             </section>
         </>
     )

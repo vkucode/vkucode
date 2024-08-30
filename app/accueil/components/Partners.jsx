@@ -11,25 +11,37 @@ export default function Partners(){
                     <h2><span>&#123;</span>&nbsp;avec&nbsp;nos&nbsp;partenaires&nbsp;<span>&#125;</span></h2>
                 </div>
                 <div className={styles.forward}>
-                <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
+                    <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
+                    <Image src='/img/accueil/partners/dimpulse.png' width={200} height={200} />
                     <Image src="/img/accueil/partners/kasper.png" width={200} height={200} />
                     <Image src="/img/accueil/partners/google.png" width={200} height={200} />
-                    <Image src="/img/accueil/partners/stripe.png" width={200} height={200} />                    <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
+                    <Image src="/img/accueil/partners/stripe.png" width={200} height={200} />                    
+                    <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
+                    <Image src='/img/accueil/partners/dimpulse.png' width={200} height={200} />
                     <Image src="/img/accueil/partners/kasper.png" width={200} height={200} />
                     <Image src="/img/accueil/partners/google.png" width={200} height={200} />
-                    <Image src="/img/accueil/partners/stripe.png" width={200} height={200} />                    <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
+                    <Image src="/img/accueil/partners/stripe.png" width={200} height={200} />                    
+                    <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
+                    <Image src='/img/accueil/partners/dimpulse.png' width={200} height={200} />
                     <Image src="/img/accueil/partners/kasper.png" width={200} height={200} />
                     <Image src="/img/accueil/partners/google.png" width={200} height={200} />
-                    <Image src="/img/accueil/partners/stripe.png" width={200} height={200} />                    <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
+                    <Image src="/img/accueil/partners/stripe.png" width={200} height={200} />                    
+                    <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
+                    <Image src='/img/accueil/partners/dimpulse.png' width={200} height={200} />
                     <Image src="/img/accueil/partners/kasper.png" width={200} height={200} />
                     <Image src="/img/accueil/partners/google.png" width={200} height={200} />
-                    <Image src="/img/accueil/partners/stripe.png" width={200} height={200} />                    <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
+                    <Image src="/img/accueil/partners/stripe.png" width={200} height={200} />                    
+                    <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
+                    <Image src='/img/accueil/partners/dimpulse.png' width={200} height={200} />
                     <Image src="/img/accueil/partners/kasper.png" width={200} height={200} />
                     <Image src="/img/accueil/partners/google.png" width={200} height={200} />
-                    <Image src="/img/accueil/partners/stripe.png" width={200} height={200} />                    <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
+                    <Image src="/img/accueil/partners/stripe.png" width={200} height={200} />                    
+                    <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
+                    <Image src='/img/accueil/partners/dimpulse.png' width={200} height={200} />
                     <Image src="/img/accueil/partners/kasper.png" width={200} height={200} />
                     <Image src="/img/accueil/partners/google.png" width={200} height={200} />
-                    <Image src="/img/accueil/partners/stripe.png" width={200} height={200} />                    <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
+                    <Image src="/img/accueil/partners/stripe.png" width={200} height={200} />                    
+                    <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
                     <Image src="/img/accueil/partners/kasper.png" width={200} height={200} />
                     <Image src="/img/accueil/partners/google.png" width={200} height={200} />
                     <Image src="/img/accueil/partners/stripe.png" width={200} height={200} />
