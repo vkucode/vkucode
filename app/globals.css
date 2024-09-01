@@ -17,6 +17,7 @@
   src: url("/fonts/Thunder.ttf");
 }
 
+html,
 body {
   width: 100vw !important;
   overflow-x: hidden !important;

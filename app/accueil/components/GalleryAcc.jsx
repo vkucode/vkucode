@@ -9,22 +9,38 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function GalleryAcc(){
     useEffect(() => {
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: "#handAnim",
-                start: "top+=0px center-=100px", // Începe când partea de sus a div-ului este la începutul viewport-ului
-                end: "center+=320px center", // Se termină cu 200px înainte de finalul div-ului
-                pin: "#hand",
-                scrub: true,
-                // markers: true,
-            }
+        let mm = gsap.matchMedia();
+
+        mm.add("(max-width: 767px)", () => {
+            // Aici se definește animația pentru ecrane sub 768px
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#handAnim",
+                    start: "top-=50px center", 
+                    end: "top+=660px center+=50px",
+                    pin: "#hand",
+                    scrub: true,
+                    // markers: true,
+                }
+            });
         });
 
-        // Poți adăuga aici mai multe animații în timeline dacă e necesar
+        mm.add("(min-width: 768px)", () => {
+            // Aici se definește animația pentru ecrane peste 768px
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#handAnim",
+                    start: "top center-=100px",
+                    end: "center+=320px center",
+                    pin: "#hand",
+                    scrub: true,
+                    // markers: true,
+                }
+            });
+        });
 
-        return () => {
-            if(tl.scrollTrigger) tl.scrollTrigger.kill(); // Cleanup dacă componenta este demontată
-        };
+        // Cleanup pentru a elimina orice animații sau scrollTriggers când componenta se demontează
+        return () => mm.revert();
     }, []);
 
     return(

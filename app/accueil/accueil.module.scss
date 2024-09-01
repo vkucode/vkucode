@@ -242,9 +242,9 @@
 // Gallery Accuiel Section
 
 .galleryAcc {
-    @apply flex flex-col overflow-hidden relative justify-center items-center w-screen py-0 md:py-10 md:pb-[100px] bg-[var(--color-bg-black)];
+    @apply flex flex-col overflow-hidden relative justify-center items-center w-screen py-10 lg:py-10 lg:pb-[100px] bg-[var(--color-bg-black)];
     .devWrapperScreens{
-        @apply relative w-[170%] md:w-full flex flex-col z-0 justify-center items-center max-w-[1800px];
+        @apply relative w-[190%] sm:w-[130%] md:w-[120%] lg:w-full flex flex-col z-0 justify-center items-center max-w-[1800px];
         .galleryDevScreens{
             @apply flex flex-col w-full justify-center items-center gap-5;
             .devScreenList{
@@ -261,14 +261,14 @@
         }
     }
     .galleryHandWrapper{
-        @apply absolute flex flex-col mt-0 w-full max-w-[1800px] h-full top-0 z-20;
+        @apply absolute flex flex-col mt-10 md:mt-0 w-full max-w-[1800px] h-full top-0 z-20;
         .galleryHand{
             @apply flex flex-col justify-center items-center relative w-full;
             .handImg{
                 @apply -mt-[15px] md:-mt-[30px] z-20 top-0 absolute w-[770px] md:w-[1028.5px] xl:w-[1589.5px] min-w-[770px] md:min-w-[1028.5px] xl:min-w-[1589.5px];
             }
             .handContent{
-                @apply absolute top-0 z-10 mt-[10px] md:mt-[15px] w-[150px] md:w-[200.75px] xl:w-[310.25px] h-[310px] md:h-[423.5px] xl:h-[654.5px];
+                @apply absolute top-0 z-10 mt-[5px] md:-mt-[0px] lg:mt-[15px] w-[150px] md:w-[200.75px] xl:w-[310.25px] h-[310px] md:h-[433.5px] xl:h-[654.5px];
                 img{
                     @apply relative top-0 w-[150px] md:w-[200.75px] xl:w-[310.25px] h-[310px] md:h-[403.5px] xl:h-[634.5px];
                 }
