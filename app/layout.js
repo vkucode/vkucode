@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "VKU CODE",
   description: "",
+  theme: "#0a0a0f",
 };
 
 export default function RootLayout({ children }) {
