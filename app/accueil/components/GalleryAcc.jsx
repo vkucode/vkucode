@@ -12,8 +12,8 @@ export default function GalleryAcc(){
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: "#handAnim",
-                start: "top center-=100px", // Începe când partea de sus a div-ului este la începutul viewport-ului
-                end: "center+=480px center", // Se termină cu 200px înainte de finalul div-ului
+                start: "top+=0px center-=100px", // Începe când partea de sus a div-ului este la începutul viewport-ului
+                end: "center+=320px center", // Se termină cu 200px înainte de finalul div-ului
                 pin: "#hand",
                 scrub: true,
                 // markers: true,
