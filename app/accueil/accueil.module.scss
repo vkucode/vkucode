@@ -5,7 +5,7 @@
 // }
 // Intro Page Section
 .introPage {
-    @apply fixed w-screen h-dvh flex flex-col justify-center items-center;
+    @apply absolute w-screen h-[40vh] flex flex-col justify-center items-center;
 
     img {
         @apply w-full h-full absolute object-cover -z-20;
@@ -34,7 +34,7 @@
     }
 
     .textHeader {
-        @apply relative w-full max-w-7xl h-fit py-20 px-10;
+        @apply relative w-full max-w-7xl h-fit py-20 pt-0 px-10;
 
         .bgImg {
             @apply w-full h-full absolute z-0;

@@ -15,12 +15,12 @@ export default function Accueil() {
     return (
         <>
             <section className={styles.accueilPage}>
-                {/* <IntroPage /> */}
+                <IntroPage />
                 <HeaderAccueil />
                 <BandText />
                 <SmartDevelopment />
                 <Partners />
-                <GalleryAcc />
+                {/* <GalleryAcc /> */}
                 <BandText />
                 <AccContactForm />
             </section>
