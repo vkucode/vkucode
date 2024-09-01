@@ -9,12 +9,15 @@ import SmartDevelopment from './components/SmartDevelopment'
 import Partners from './components/Partners'
 import GalleryAcc from './components/GalleryAcc'
 import AccContactForm from './components/AccContactForm'
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 
 export default function Accueil() {
 
     return (
         <>
             <section className={styles.accueilPage}>
+                <Navbar />
                 <IntroPage />
                 <HeaderAccueil />
                 <BandText />
@@ -23,6 +26,7 @@ export default function Accueil() {
                 {/* <GalleryAcc /> */}
                 <BandText />
                 <AccContactForm />
+                <Footer />
             </section>
         </>
     )
