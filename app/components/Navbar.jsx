@@ -34,7 +34,7 @@ const FlyoutNav = () => {
       ${
         scrolled
           ? "bg-[var(--color-bg-black)] py-5 shadow-xl"
-          : "bg-[var(--color-bg-black)]/0 py-6 shadow-none"
+          : "bg-[var(--color-bg-black)] bg-opacity-25 py-6 shadow-none"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between">
@@ -49,11 +49,10 @@ const FlyoutNav = () => {
   );
 };
 
-const Logo = ({ color = "white" }) => {
-  // Temp logo from https://logoipsum.com/
+const Logo = () => {
   return (
     <a href="/accueil">
-      <Image src="/img/logo.png" width={100} height={100} />
+      <Image src="/img/logoVKU.png" width={100} height={100} />
     </a>
   );
 };
