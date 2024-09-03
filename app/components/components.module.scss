@@ -1,5 +1,5 @@
 .footerSection{
-    @apply flex flex-col justify-center items-center w-full px-5 lg:px-0 py-5 lg:py-10 bg-[var(--color-bg-black)];
+    @apply flex flex-col justify-center items-center w-full px-5 lg:px-0 py-5 lg:py-10 bg-[var(--color-bg-black)] ;
     div{
         @apply flex flex-row justify-center items-center text-[#434343] uppercase;
         a{

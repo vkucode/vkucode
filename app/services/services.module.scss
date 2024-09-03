@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&display=swap");
+.servicesPres{
+    @apply flex flex-row bg-[var(--color-bg-black)] justify-center items-center w-full h-full;
+}
+.menuServices{
+    @apply absolute z-20 lg:-right-[350px] lg:-rotate-90;
+    ul{
+        @apply flex flex-row-reverse gap-10 justify-center items-center;
+        li{
+            @apply text-white font-normal text-base py-1 px-5 cursor-pointer rounded-2xl hover:bg-[#B787F5] hover:text-black transition-all ease-in-out duration-300; 
+            letter-spacing: 2px;
+            font-family: 'DM Sans'
+        }
+    }
+}
+.serviceSlide{
+    @apply w-screen h-[100vh] flex flex-row justify-center items-center mt-[0px] text-white;
+    
+    
+    .slideWeb{
+        @apply flex flex-col lg:flex-row w-full max-w-[1600px] lg:px-20 h-full justify-center items-center;
+        .bgImgDeg{
+            @apply absolute w-full h-full object-cover;
+        }
+        div{
+            @apply flex flex-col w-full z-10;
+            h1{
+                @apply uppercase text-9xl font-bold;
+                font-family: 'Thunder';
+            }
+            span{
+                @apply text-[#B787F5];
+            }
+            h2{
+                @apply text-3xl font-bold mb-4;
+                font-family: 'DM Sans';
+
+            }
+            h3{
+                @apply uppercase text-3xl -mt-5 mb-8;
+                font-family: 'Orbitron';
+            }
+            p{
+                @apply text-lg font-normal text-[#727885];
+                font-family: 'DM Sans';
+                b{
+                    @apply text-white ml-10;
+                }
+            }
+            a{
+                @apply w-fit px-10 py-2 rounded-3xl mt-5 bg-gradient-to-b from-[#B787F5] to-[#55367E];
+            }
+            img{
+                @apply relative w-full max-w-[500px] h-auto;
+                transition: 0.2s all ease-in-out;
+            }
+        }
+        .divImagesWeb{
+            @apply flex h-fit flex-row justify-center items-end;
+            img{
+                @apply h-full w-full;
+            }
+        }
+    }
+
+
+
+    .appSlide{
+        @apply flex flex-col lg:flex-row w-full max-w-[1600px] lg:px-20 h-full justify-center items-center;
+        .bgImgDeg{
+            @apply absolute w-full h-full object-cover;
+        }
+        div{
+            @apply flex flex-col w-full;
+            h1{
+                @apply uppercase text-9xl font-bold;
+                font-family: 'Thunder';
+            }
+            span{
+                @apply text-[#B787F5];
+            }
+            h2{
+                @apply text-3xl font-bold mb-4;
+                font-family: 'DM Sans';
+
+            }
+            h3{
+                @apply uppercase text-3xl -mt-5 mb-8;
+                font-family: 'Orbitron';
+            }
+            p{
+                @apply text-lg font-normal text-[#727885];
+                font-family: 'DM Sans';
+                b{
+                    @apply text-white ml-10;
+                }
+            }
+            a{
+                @apply w-fit px-10 py-2 rounded-3xl mt-5 bg-gradient-to-b from-[#B787F5] to-[#55367E];
+            }
+            img{
+                @apply relative w-full h-auto;
+                transition: 0.2s all ease-in-out;
+                animation: floating 3s ease-in-out infinite;
+            }
+        }
+        
+    }
+    @keyframes floating {
+        0%{
+            margin-top: -20px;
+        }
+        50%{
+            margin-top: 40px;
+        }
+        100%{
+            margin-top: -20px;
+        }
+    }
+
+    .softSlide{
+        @apply flex flex-col lg:flex-row w-full max-w-[1600px] lg:px-20 h-full justify-center items-center;
+        .bgImgDeg{
+            @apply absolute w-full h-full object-cover;
+        }
+        div{
+            @apply flex flex-col w-full;
+            h1{
+                @apply uppercase text-9xl font-bold;
+                font-family: 'Thunder';
+            }
+            span{
+                @apply text-[#B787F5];
+            }
+            h2{
+                @apply text-3xl font-bold mb-4;
+                font-family: 'DM Sans';
+
+            }
+            h3{
+                @apply uppercase text-3xl -mt-5 mb-8;
+                font-family: 'Orbitron';
+            }
+            p{
+                @apply text-lg font-normal text-[#727885];
+                font-family: 'DM Sans';
+                b{
+                    @apply text-white ml-10;
+                }
+            }
+            a{
+                @apply w-fit px-10 py-2 rounded-3xl mt-5 bg-gradient-to-b from-[#B787F5] to-[#55367E];
+            }
+            img{
+                @apply relative w-full h-auto;
+                transition: 0.2s all ease-in-out;
+            }
+        }
+        .divImagesWeb{
+            @apply flex h-fit flex-row justify-center items-end;
+            img{
+                @apply h-full w-full;
+            }
+        }
+        
+    }
+
+}
+
+.designSlide{
+    @apply flex flex-col lg:flex-row w-full max-w-[1600px] lg:px-20 h-full justify-center items-center;
+        .bgImgDeg{
+            @apply absolute w-full h-full object-cover;
+        }
+        div{
+            @apply flex flex-col w-full;
+            .logoDesign{
+                @apply w-[300px]
+            }
+            span{
+                @apply text-[#851A1A];
+            }
+            h2{
+                @apply text-3xl font-bold mb-4;
+                font-family: 'DM Sans';
+
+            }
+            h4{
+                @apply uppercase text-xl mt-5 border-[1px] border-[#851A1A] py-1 px-10 bg-[#851A1A] w-fit bg-opacity-15 rounded-3xl mb-8;
+                font-family: 'Orbitron';
+            }
+            p{
+                @apply text-lg font-normal text-[#727885];
+                font-family: 'DM Sans';
+                b{
+                    @apply text-white ml-10;
+                }
+                span{
+                    @apply text-white uppercase;
+                }
+                strong{
+                    @apply text-[#851A1A];
+                }
+            }
+            a{
+                @apply w-fit px-10 py-2 rounded-3xl mt-5 bg-gradient-to-b from-[#AC2323] to-[#851A1A];
+            }
+            img{
+                @apply relative w-full h-auto;
+                transition: 0.2s all ease-in-out;
+            }
+        }
+}

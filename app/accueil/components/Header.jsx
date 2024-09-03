@@ -7,7 +7,7 @@ export default function HeaderAccueil(){
     return(
         <>
             <section className={styles.headerAccueil}>
-                <div className='w-screen overflow-x-hidden h-[40vh] animate__animated animate__fadeInUp flex flex-col justify-center items-center'>
+                <div className='w-screen overflow-x-hidden h-[40vh] pt-20 animate__animated animate__fadeInUp flex flex-col justify-center items-center'>
                     <h1>
                         for&nbsp;us&nbsp;the&nbsp;sky<br />
                         is&nbsp;not&nbsp;the&nbsp;<span>limit</span>

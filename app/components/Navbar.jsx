@@ -34,7 +34,7 @@ const FlyoutNav = () => {
       ${
         scrolled
           ? "bg-[var(--color-bg-black)] py-5 shadow-xl"
-          : "bg-[var(--color-bg-black)] bg-opacity-25 py-6 shadow-none"
+          : "bg-[var(--color-bg-black)] bg-opacity-0 py-6 shadow-none"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between">
@@ -86,7 +86,7 @@ const NavLink = ({ children, href, FlyoutContent }) => {
           style={{
             transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
           }}
-          className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-indigo-300 transition-transform duration-300 ease-out"
+          className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-[#B787F5] transition-transform duration-300 ease-out"
         />
       </a>
       <AnimatePresence>
@@ -97,10 +97,10 @@ const NavLink = ({ children, href, FlyoutContent }) => {
             exit={{ opacity: 0, y: 15 }}
             style={{ translateX: "-50%" }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="absolute left-1/2 top-12 bg-white text-black"
+            className="absolute left-1/2 top-12 bg-[#B787F5] text-black"
           >
             <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
-            <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white" />
+            <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#B787F5]" />
             <FlyoutContent />
           </motion.div>
         )}
@@ -125,7 +125,7 @@ const CTAs = () => {
 
 const AboutUsContent = () => {
   return (
-    <div className="grid h-fit w-full grid-cols-12 shadow-xl lg:h-72 lg:w-[600px] lg:shadow-none xl:w-[750px]">
+    <div className="grid h-fit w-full rounded-xl lg:border-2 lg:border-[#B787F5] grid-cols-12 shadow-xl lg:h-72 lg:w-[600px] lg:shadow-none xl:w-[750px]">
       <div className="col-span-12 flex flex-col justify-between bg-[var(--color-bg-black)] p-6 lg:col-span-4">
         <div>
           <h2 className="mb-2 text-xl font-semibold text-white">Services</h2>
@@ -135,15 +135,15 @@ const AboutUsContent = () => {
         </div>
         <a
           href="#"
-          className="flex items-center gap-1 text-xs text-indigo-300 hover:underline"
+          className="flex items-center gap-1 text-xs text-[#B787F5] hover:underline"
         >
           En savoir plus <FiArrowRight />
         </a>
       </div>
-      <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3 bg-[var(--color-bg-black)] lg:bg-white p-6 lg:col-span-8">
+      <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3 bg-[var(--color-bg-black)] p-6 lg:col-span-8">
         <a
           href="#"
-          className="rounded-xl text-white lg:text-black border-[1px] border-[#55367E] bg-transparent p-3 transition-colors hover:bg-[#55367E] hover:text-white"
+          className="rounded-xl text-white border-[1px] border-[#55367E] bg-transparent p-3 transition-colors hover:bg-[#55367E] hover:text-white"
         >
           <h3 className="font-semibold">WebSite</h3>
           <span className="-ml-[2px] text-sm">&#123;sur&nbsp;mesure&#125;</span><br />
@@ -153,7 +153,7 @@ const AboutUsContent = () => {
         </a>
         <a
           href="#"
-          className="rounded-xl text-white lg:text-black border-[1px] border-[#55367E] bg-transparent p-3 transition-colors hover:bg-[#55367E] hover:text-white"
+          className="rounded-xl text-white border-[1px] border-[#55367E] bg-transparent p-3 transition-colors hover:bg-[#55367E] hover:text-white"
         >
           <h3 className="font-semibold">Applications</h3>
           <span className="-ml-[2px] text-sm">&#123;sur&nbsp;mesure&#125;</span><br />
@@ -163,7 +163,7 @@ const AboutUsContent = () => {
         </a>
         <a
           href="#"
-          className="rounded-xl text-white lg:text-black border-[1px] border-[#55367E] bg-transparent p-3 transition-colors hover:bg-[#55367E] hover:text-white"
+          className="rounded-xl text-white border-[1px] border-[#55367E] bg-transparent p-3 transition-colors hover:bg-[#55367E] hover:text-white"
         >
           <h3 className="mb-1 font-semibold">Design</h3>
           <p className="text-xs">
@@ -172,7 +172,7 @@ const AboutUsContent = () => {
         </a>
         <a
           href="#"
-          className="rounded-xl text-white lg:text-black border-[1px] border-[#55367E] bg-transparent p-3 transition-colors hover:bg-[#55367E] hover:text-white"
+          className="rounded-xl text-white border-[1px] border-[#55367E] bg-transparent p-3 transition-colors hover:bg-[#55367E] hover:text-white"
         >
           <h3 className="font-semibold">CyberSecurite</h3>
           <span className="-ml-[2px] text-sm">&#123;kaspersky&#125;</span><br />
