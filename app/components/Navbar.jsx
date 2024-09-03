@@ -33,8 +33,8 @@ const FlyoutNav = () => {
       transition-all duration-300 ease-out lg:px-12
       ${
         scrolled
-          ? "bg-[var(--color-bg-black)] py-5 shadow-xl"
-          : "bg-[var(--color-bg-black)] bg-opacity-0 py-6 shadow-none"
+          ? "bg-[var(--color-bg-black)] py-3 shadow-xl"
+          : "bg-[var(--color-bg-black)]/0 py-5 shadow-none"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between">
@@ -52,7 +52,7 @@ const FlyoutNav = () => {
 const Logo = () => {
   return (
     <a href="/accueil">
-      <Image src="/img/logoVKU.png" width={100} height={100} />
+      <Image src="/img/logoVKU.png" className="w-full max-w-[70px] lg:max-w-[80px]" width={100} height={100} />
     </a>
   );
 };
