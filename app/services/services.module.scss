@@ -41,7 +41,7 @@
                 font-family: 'Orbitron';
             }
             p{
-                @apply text-sm font-normal text-[#727885];
+                @apply text-sm lg:text-base font-normal text-[#727885];
                 font-family: 'DM Sans';
                 b{
                     @apply text-white ml-10;
@@ -54,7 +54,7 @@
         .divImagesWeb{
             @apply flex h-fit flex-row justify-center items-end;
             img{
-                @apply h-auto w-full max-w-[300px];
+                @apply h-auto w-full max-w-[300px] lg:max-w-[500px]; 
             }
         }
     }
@@ -85,7 +85,7 @@
                 font-family: 'Orbitron';
             }
             p{
-                @apply text-sm font-normal text-[#727885];
+                @apply text-sm lg:text-base font-normal text-[#727885];
                 font-family: 'DM Sans';
                 b{
                     @apply text-white ml-10;
@@ -95,7 +95,7 @@
                 @apply w-fit px-10 text-sm lg:text-base py-2 rounded-3xl mt-5 bg-gradient-to-b from-[#B787F5] to-[#55367E];
             }
             img{
-                @apply relative w-full h-auto max-w-[300px];
+                @apply relative w-full h-auto max-w-[300px] lg:max-w-[800px];
                 transition: 0.2s all ease-in-out;
             }
             @media (min-width: 1024px) {

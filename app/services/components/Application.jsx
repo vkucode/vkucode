@@ -13,7 +13,7 @@ export default function Application(){
                         <h1>Application</h1>
                         <h3><span>&#123;</span>sur&nbsp;mesure<span>&#125;</span></h3>
                         <h2>Des applications qui concrétisent <span>vos visions.</span></h2>
-                        <p><b>Chez V<span>K</span>U CODE,</b> nous créons des applications sur mesure pour donner vie à vos projets numériques. Experts en solutions mobiles et web. Nous transformons vos idées en outils performants et adaptés à vos besoins. Avec nous, développez L'avenir de votre entreprise.</p>
+                        <p><b>Chez V<span>K</span>U CODE,</b> nous créons des applications sur mesure pour donner vie à vos projets numériques. Nous transformons vos idées en outils performants et adaptés à vos besoins.</p>
                         <a href="/contact">Nous contacter</a>
                     </div>
                     <div className='animate__animated animate__fadeInRight'>
