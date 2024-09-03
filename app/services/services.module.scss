@@ -23,7 +23,7 @@
             @apply absolute w-full h-full object-cover;
         }
         div{
-            @apply flex flex-col mb-10  justify-center lg:justify-start items-center lg:items-start text-center lg:text-left w-full z-10 px-5;
+            @apply flex flex-col mb-14 justify-center lg:justify-start items-center lg:items-start text-center lg:text-left w-full z-10 px-5;
             h1{
                 @apply uppercase text-7xl lg:text-9xl font-bold;
                 font-family: 'Thunder';
@@ -54,7 +54,7 @@
         .divImagesWeb{
             @apply flex h-fit flex-row justify-center items-end;
             img{
-                @apply h-auto w-full max-w-[300px] lg:max-w-[500px]; 
+                @apply h-auto w-full max-w-[200px] lg:max-w-[500px];
             }
         }
     }

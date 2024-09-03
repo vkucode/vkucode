@@ -20,7 +20,7 @@ export default function WebSite(){
                             <a href="/contact">Nous contacter</a>
                     </div>
                     <div className={`${styles.divImagesWeb} animate__animated animate__fadeInDown`}>
-                        <Image src="/img/services/tel1.png" className='!max-w-[150px] lg:!max-w-[200px] -mr-[50px] z-30' width={500} height={500} alt='vkucode' />
+                        <Image src="/img/services/tel1.png" className='!max-w-[80px] lg:!max-w-[200px] -mr-[10px] -mb-[50px] lg:-mr-[50px] z-30' width={500} height={500} alt='vkucode' />
                         <Image src="/img/services/ordi.png" className='scale-150' width={1000} height={1000} alt='vkucode' />
                     </div>
                 </div>
