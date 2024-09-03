@@ -3,7 +3,7 @@
     @apply flex flex-row bg-[var(--color-bg-black)] justify-center items-center w-full h-full;
 }
 .menuServices{
-    @apply absolute z-20 lg:-right-[320px] lg:-rotate-90 lg:bottom-auto bottom-10;
+    @apply absolute z-20 lg:-right-[320px] lg:-rotate-90 lg:bottom-auto bottom-4;
     ul{
         @apply flex lg:flex-row-reverse flex-row flex-wrap gap-3 lg:gap-5 justify-center items-center;
         li{
