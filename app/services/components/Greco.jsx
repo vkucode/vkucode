@@ -13,7 +13,7 @@ export default function Design(){
                         <h4>partenaire</h4>
                         <h2>Le design au service de <span>votre vision.</span></h2>
                         <p>
-                            <b></b>Nous combinons notre expertise en développement web avec les compétences en design et photographie de <span>Grec<strong>o</strong> design</span>. Ensemble, nous créons des solutions numériques sur-mesure, alliant performance, design attrayant et visuels photographiques de haute qualité pour sublimer votre projet.
+                            <b></b>Nous combinons notre expertise en développement web avec les compétences en design et photographie de <span>Grec<strong>o</strong> design</span>.
                         </p>
                         <a href="/contact">Nous contacter</a>
                     </div>
