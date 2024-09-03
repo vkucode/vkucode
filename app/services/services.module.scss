@@ -14,7 +14,7 @@
     }
 }
 .serviceSlide{
-    @apply w-screen min-h-[100vh] flex flex-row justify-center items-center mt-[0px] text-white;
+    @apply w-screen relative !top-0 left-0 min-h-[100vh] flex flex-row justify-center items-center !mt-[0px] text-white;
     
     
     .slideWeb{
@@ -212,7 +212,7 @@
     .cyberSlide{
         @apply flex flex-col lg:flex-row w-full max-w-[1600px] lg:px-20 h-full justify-center items-center;
             .bgImgDeg{
-                @apply absolute w-full max-w-[3000px] h-full -mb-[0px] md:-mb-0 object-cover;
+                @apply absolute w-full max-w-[3000px] h-full object-cover;
             }
 
             div{
