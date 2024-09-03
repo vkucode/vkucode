@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+.contactWrap{
+    @apply flex flex-col justify-center items-center px-5 relative min-h-[100vh] bg-[var(--color-bg-black)];
+    .text{
+        @apply uppercase text-center text-white;
+        font-family: 'Montserrat';
+    }
+}

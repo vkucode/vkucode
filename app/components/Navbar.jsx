@@ -52,7 +52,7 @@ const FlyoutNav = () => {
 const Logo = () => {
   return (
     <a href="/accueil">
-      <Image src="/img/logoVKU.png" className="w-full max-w-[70px] lg:max-w-[80px]" width={100} height={100} />
+      <Image src="/img/logoVKU.png" alt="vkucode" className="w-full max-w-[70px] lg:max-w-[80px]" width={100} height={100} />
     </a>
   );
 };
