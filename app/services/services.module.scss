@@ -3,18 +3,18 @@
     @apply flex flex-row bg-[var(--color-bg-black)] justify-center items-center w-full h-full;
 }
 .menuServices{
-    @apply absolute z-20 lg:-right-[350px] lg:-rotate-90;
+    @apply absolute z-20 lg:-right-[320px] lg:-rotate-90 lg:bottom-auto bottom-10;
     ul{
-        @apply flex flex-row-reverse gap-10 justify-center items-center;
+        @apply flex lg:flex-row-reverse flex-row flex-wrap gap-3 lg:gap-5 justify-center items-center;
         li{
-            @apply text-white font-normal text-base py-1 px-5 cursor-pointer rounded-2xl hover:bg-[#B787F5] hover:text-black transition-all ease-in-out duration-300; 
+            @apply text-white font-normal text-xs lg:text-base py-1 px-5 cursor-pointer rounded-2xl hover:bg-[#B787F5] hover:text-black transition-all ease-in-out duration-300; 
             letter-spacing: 2px;
             font-family: 'DM Sans'
         }
     }
 }
 .serviceSlide{
-    @apply w-screen h-[100vh] flex flex-row justify-center items-center mt-[0px] text-white;
+    @apply w-screen min-h-[100vh] flex flex-row justify-center items-center mt-[0px] text-white;
     
     
     .slideWeb{
@@ -23,42 +23,38 @@
             @apply absolute w-full h-full object-cover;
         }
         div{
-            @apply flex flex-col w-full z-10;
+            @apply flex flex-col mb-10  justify-center lg:justify-start items-center lg:items-start text-center lg:text-left w-full z-10 px-5;
             h1{
-                @apply uppercase text-9xl font-bold;
+                @apply uppercase text-7xl lg:text-9xl font-bold;
                 font-family: 'Thunder';
             }
             span{
                 @apply text-[#B787F5];
             }
             h2{
-                @apply text-3xl font-bold mb-4;
+                @apply text-xl lg:text-3xl font-bold mb-4;
                 font-family: 'DM Sans';
 
             }
             h3{
-                @apply uppercase text-3xl -mt-5 mb-8;
+                @apply uppercase text-xl lg:text-3xl -mt-3 lg:-mt-5 lg:mb-8 mb-4;
                 font-family: 'Orbitron';
             }
             p{
-                @apply text-lg font-normal text-[#727885];
+                @apply text-sm font-normal text-[#727885];
                 font-family: 'DM Sans';
                 b{
                     @apply text-white ml-10;
                 }
             }
             a{
-                @apply w-fit px-10 py-2 rounded-3xl mt-5 bg-gradient-to-b from-[#B787F5] to-[#55367E];
-            }
-            img{
-                @apply relative w-full max-w-[500px] h-auto;
-                transition: 0.2s all ease-in-out;
+                @apply w-fit px-10 text-sm lg:text-base py-2 rounded-3xl mt-5 bg-gradient-to-b from-[#B787F5] to-[#55367E];
             }
         }
         .divImagesWeb{
             @apply flex h-fit flex-row justify-center items-end;
             img{
-                @apply h-full w-full;
+                @apply h-auto w-full max-w-[300px];
             }
         }
     }
@@ -66,42 +62,48 @@
 
 
     .appSlide{
-        @apply flex flex-col lg:flex-row w-full max-w-[1600px] lg:px-20 h-full justify-center items-center;
+        @apply flex flex-col lg:flex-row w-full max-w-[1600px] px-5 lg:px-20 h-full justify-center items-center;
         .bgImgDeg{
             @apply absolute w-full h-full object-cover;
         }
         div{
-            @apply flex flex-col w-full;
+            @apply flex flex-col mb-10  justify-center lg:justify-start items-center lg:items-start text-center lg:text-left w-full z-10 px-5;
             h1{
-                @apply uppercase text-9xl font-bold;
+                @apply uppercase text-7xl lg:text-9xl font-bold;
                 font-family: 'Thunder';
             }
             span{
                 @apply text-[#B787F5];
             }
             h2{
-                @apply text-3xl font-bold mb-4;
+                @apply text-xl lg:text-3xl font-bold mb-4;
                 font-family: 'DM Sans';
 
             }
             h3{
-                @apply uppercase text-3xl -mt-5 mb-8;
+                @apply uppercase text-xl lg:text-3xl -mt-3 lg:-mt-5 lg:mb-8 mb-4;
                 font-family: 'Orbitron';
             }
             p{
-                @apply text-lg font-normal text-[#727885];
+                @apply text-sm font-normal text-[#727885];
                 font-family: 'DM Sans';
                 b{
                     @apply text-white ml-10;
                 }
             }
             a{
-                @apply w-fit px-10 py-2 rounded-3xl mt-5 bg-gradient-to-b from-[#B787F5] to-[#55367E];
+                @apply w-fit px-10 text-sm lg:text-base py-2 rounded-3xl mt-5 bg-gradient-to-b from-[#B787F5] to-[#55367E];
             }
             img{
-                @apply relative w-full h-auto;
+                @apply relative w-full h-auto max-w-[300px];
                 transition: 0.2s all ease-in-out;
-                animation: floating 3s ease-in-out infinite;
+            }
+            @media (min-width: 1024px) {
+                img{
+                    @apply relative w-full h-auto;
+                    transition: 0.2s all ease-in-out;
+                    animation: floating 3s ease-in-out infinite;
+                }    
             }
         }
         
@@ -164,50 +166,93 @@
         }
         
     }
-
-}
-
-.designSlide{
-    @apply flex flex-col lg:flex-row w-full max-w-[1600px] lg:px-20 h-full justify-center items-center;
-        .bgImgDeg{
-            @apply absolute w-full h-full object-cover;
-        }
-        div{
-            @apply flex flex-col w-full;
-            .logoDesign{
-                @apply w-[300px]
+    .designSlide{
+        @apply flex flex-col lg:flex-row w-full max-w-[1600px] lg:px-20 h-full justify-center items-center;
+            .bgImgDeg{
+                @apply absolute w-full h-full object-cover;
             }
-            span{
-                @apply text-[#851A1A];
-            }
-            h2{
-                @apply text-3xl font-bold mb-4;
-                font-family: 'DM Sans';
-
-            }
-            h4{
-                @apply uppercase text-xl mt-5 border-[1px] border-[#851A1A] py-1 px-10 bg-[#851A1A] w-fit bg-opacity-15 rounded-3xl mb-8;
-                font-family: 'Orbitron';
-            }
-            p{
-                @apply text-lg font-normal text-[#727885];
-                font-family: 'DM Sans';
-                b{
-                    @apply text-white ml-10;
+            div{
+                @apply flex flex-col w-full;
+                .logoDesign{
+                    @apply w-[300px]
                 }
                 span{
-                    @apply text-white uppercase;
-                }
-                strong{
                     @apply text-[#851A1A];
                 }
+                h2{
+                    @apply text-3xl font-bold mb-4;
+                    font-family: 'DM Sans';
+    
+                }
+                h4{
+                    @apply uppercase text-xl mt-5 border-[1px] border-[#851A1A] py-1 px-10 bg-[#851A1A] w-fit bg-opacity-15 rounded-3xl mb-8;
+                    font-family: 'Orbitron';
+                }
+                p{
+                    @apply text-lg font-normal text-[#727885];
+                    font-family: 'DM Sans';
+                    b{
+                        @apply text-white ml-10;
+                    }
+                    span{
+                        @apply text-white uppercase;
+                    }
+                    strong{
+                        @apply text-[#851A1A];
+                    }
+                }
+                a{
+                    @apply w-fit px-10 py-2 rounded-3xl mt-5 bg-gradient-to-b from-[#AC2323] to-[#851A1A];
+                }
+                img{
+                    @apply relative w-full h-auto;
+                    transition: 0.2s all ease-in-out;
+                }
             }
-            a{
-                @apply w-fit px-10 py-2 rounded-3xl mt-5 bg-gradient-to-b from-[#AC2323] to-[#851A1A];
+    }
+    .cyberSlide{
+        @apply flex flex-col lg:flex-row w-full max-w-[1600px] lg:px-20 h-full justify-center items-center;
+            .bgImgDeg{
+                @apply absolute w-full max-w-[3000px]  h-full object-cover;
             }
-            img{
-                @apply relative w-full h-auto;
-                transition: 0.2s all ease-in-out;
+            div{
+                @apply flex flex-col w-full z-10;
+                .logoKasper{
+                    @apply w-[600px]
+                }
+                span{
+                    @apply text-[#016E5D];
+                }
+                h2{
+                    @apply text-3xl font-bold mb-4;
+                    font-family: 'DM Sans';
+    
+                }
+                h4{
+                    @apply uppercase text-xl mt-5 border-[1px] border-[#016E5D] py-1 px-10 bg-[#016E5D] w-fit bg-opacity-10 rounded-3xl mb-8;
+                    font-family: 'Orbitron';
+                }
+                p{
+                    @apply text-lg font-normal text-[#727885];
+                    font-family: 'DM Sans';
+                    b{
+                        @apply text-white ml-10;
+                    }
+                    span{
+                        @apply text-white uppercase;
+                    }
+                    strong{
+                        @apply text-[#016E5D];
+                    }
+                }
+                a{
+                    @apply w-fit px-10 py-2 rounded-3xl mt-5 bg-gradient-to-r from-[#35D3BB] to-[#016E5D];
+                }
+                img{
+                    @apply relative w-full h-auto;
+                    transition: 0.2s all ease-in-out;
+                }
             }
-        }
+    }
 }
+

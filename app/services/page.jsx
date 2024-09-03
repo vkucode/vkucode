@@ -46,7 +46,7 @@ export default function Services(){
                         Design
                     </li>
                     <li
-                        className={`${activeSection === 'cybersecurite' ? `${styles.active} bg-[#B787F5] !text-black` : ''}`}
+                        className={`${activeSection === 'cybersecurite' ? `${styles.active} hover:!bg-[#016E5D] bg-[#016E5D] !text-white` : ''}`}
                         onClick={() => setActiveSection('cybersecurite')}
                     >
                         Cyber sécurité
