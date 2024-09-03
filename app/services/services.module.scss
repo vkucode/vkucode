@@ -96,7 +96,6 @@
             }
             img{
                 @apply relative w-full h-auto max-w-[250px] lg:max-w-[800px];
-                transition: 0.2s all ease-in-out;
             }
             @media (min-width: 1024px) {
                 img{
@@ -126,32 +125,32 @@
             @apply absolute w-full h-full object-cover;
         }
         div{
-            @apply flex flex-col w-full;
+            @apply flex flex-col mb-7 justify-center lg:justify-start items-center lg:items-start text-center lg:text-left w-full z-10 px-5;
             h1{
-                @apply uppercase text-9xl font-bold;
+                @apply uppercase text-7xl lg:text-9xl font-bold;
                 font-family: 'Thunder';
             }
             span{
                 @apply text-[#B787F5];
             }
             h2{
-                @apply text-3xl font-bold mb-4;
+                @apply text-xl lg:text-3xl font-bold mb-4;
                 font-family: 'DM Sans';
 
             }
             h3{
-                @apply uppercase text-3xl -mt-5 mb-8;
+                @apply uppercase text-xl lg:text-3xl -mt-3 lg:-mt-5 lg:mb-8 mb-4;
                 font-family: 'Orbitron';
             }
             p{
-                @apply text-lg font-normal text-[#727885];
+                @apply text-sm lg:text-base font-normal text-[#727885];
                 font-family: 'DM Sans';
                 b{
                     @apply text-white ml-10;
                 }
             }
             a{
-                @apply w-fit px-10 py-2 rounded-3xl mt-5 bg-gradient-to-b from-[#B787F5] to-[#55367E];
+                @apply w-fit px-10 text-sm lg:text-base py-2 rounded-3xl mt-5 bg-gradient-to-b from-[#B787F5] to-[#55367E];
             }
             img{
                 @apply relative w-full h-auto;
@@ -161,7 +160,7 @@
         .divImagesWeb{
             @apply flex h-fit flex-row justify-center items-end;
             img{
-                @apply h-full w-full;
+                @apply h-auto w-full max-w-[250px] lg:max-w-[500px];
             }
         }
         
