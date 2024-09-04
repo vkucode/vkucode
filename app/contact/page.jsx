@@ -110,17 +110,17 @@ export default function Contact() {
         formData.append('budgetRange', budgetRange);
         formData.append('source', source);
 
-        const response = await fetch('/api/mail.php', {
+        const response = await fetch('http://194.164.72.37/mail.php', {
             method: 'POST',
             body: formData,
         });
 
-        if (response.ok) {
-            setCurrentStep(6);
-            setTimeout(() => {
-                if (isClient) router.push('/accueil'); // Verificăm dacă suntem pe client
-            }, 3000);
-        }
+        // if (response.ok) {
+        //     setCurrentStep(6);
+        //     setTimeout(() => {
+        //         if (isClient) router.push('/accueil'); // Verificăm dacă suntem pe client
+        //     }, 3000);
+        // }
     };
 
     return (

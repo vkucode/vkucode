@@ -1,4 +1,15 @@
 <?php
+// Permite cererile CORS de la orice origine (poți specifica exact "localhost:3000" dacă dorești)
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
+
+if ($_SERVER["REQUEST_METHOD"] == "OPTIONS") {
+    // Trimite răspunsul pentru pre-flight CORS (cerere OPTIONS)
+    http_response_code(200);
+    exit();
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = strip_tags(trim($_POST["name"]));
     $phone = strip_tags(trim($_POST["phone"]));

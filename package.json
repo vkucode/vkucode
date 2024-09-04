@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "cors": "^2.8.5",
     "framer-motion": "^11.3.31",
     "glitched-writer": "^2.0.29",
     "gsap": "^3.12.5",
