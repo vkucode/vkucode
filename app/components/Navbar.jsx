@@ -142,7 +142,7 @@ const AboutUsContent = () => {
       </div>
       <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3 bg-[var(--color-bg-black)] p-6 lg:col-span-8">
         <a
-          href="#"
+          href="/services"
           className="rounded-xl text-white border-[1px] border-[#55367E] bg-transparent p-3 transition-colors hover:bg-[#55367E] hover:text-white"
         >
           <h3 className="font-semibold">WebSite</h3>
@@ -152,7 +152,7 @@ const AboutUsContent = () => {
           </p>
         </a>
         <a
-          href="#"
+          href="/services#application"
           className="rounded-xl text-white border-[1px] border-[#55367E] bg-transparent p-3 transition-colors hover:bg-[#55367E] hover:text-white"
         >
           <h3 className="font-semibold">Applications</h3>
@@ -162,7 +162,7 @@ const AboutUsContent = () => {
           </p>
         </a>
         <a
-          href="#"
+          href="/services#design"
           className="rounded-xl text-white border-[1px] border-[#55367E] bg-transparent p-3 transition-colors hover:bg-[#55367E] hover:text-white"
         >
           <h3 className="mb-1 font-semibold">Design</h3>
@@ -171,7 +171,7 @@ const AboutUsContent = () => {
           </p>
         </a>
         <a
-          href="#"
+          href="/services#cybersecurite"
           className="rounded-xl text-white border-[1px] border-[#55367E] bg-transparent p-3 transition-colors hover:bg-[#55367E] hover:text-white"
         >
           <h3 className="font-semibold">CyberSecurite</h3>

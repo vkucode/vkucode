@@ -2,8 +2,51 @@
 
 .contactWrap{
     @apply flex flex-col justify-center items-center relative min-h-[100vh] bg-[var(--color-bg-black)];
-    .text{
-        @apply uppercase text-center text-white;
-        font-family: 'Montserrat';
+    .imgBg{
+        @apply absolute z-0 w-full h-full object-cover;
     }
+    .contactContent{
+        @apply w-full max-w-7xl flex flex-col justify-center items-center px-5;
+            .text{
+                @apply uppercase text-center text-xl lg:text-4xl text-white mb-5;
+                letter-spacing: 2px;
+                font-family: 'Orbitron';
+            }
+        
+            .fadeInOptions{
+                @apply flex-row flex-wrap justify-center w-full items-center gap-3 lg:gap-5 mt-5 z-10;
+                button{
+                    @apply text-white text-base lg:text-xl py-1 px-5 lg:px-10 bg-[#B787F5] hover:bg-opacity-100 hover:text-black hover:font-medium transition-all ease-in-out duration-200 bg-opacity-5 cursor-pointer border-2 border-[#B787F5] rounded-3xl;
+                    font-family: 'Montserrat';
+                }
+            }
+            .fadeInOptionsStep2{
+                @apply flex-row flex-wrap justify-center w-full max-w-5xl mx-auto items-center gap-3 lg:gap-5 mt-5 z-10;
+                button{
+                    @apply text-white text-sm lg:text-lg py-1 px-5 bg-[#B787F5] hover:bg-opacity-100 hover:text-black hover:font-medium transition-all ease-in-out duration-200 bg-opacity-5 cursor-pointer border-2 border-[#B787F5] rounded-3xl;
+                    font-family: 'Montserrat';
+                }
+            }
+            .fadeInForm{
+                @apply flex-col justify-center w-full max-w-[620px] mx-auto px-5 items-center gap-5 mt-10 z-10;
+                div{
+                    @apply flex flex-col lg:flex-row justify-center items-center gap-5;
+                    font-family: 'Montserrat';
+                    input{
+                        @apply bg-[#55367E] text-white bg-opacity-25 border-[1px] border-[#B787F5] py-2 px-20 pl-5 rounded-3xl outline-none;
+                    }
+                }
+                textarea{
+                    @apply bg-[#55367E] bg-opacity-25 text-white min-h-[150px] w-full border-[1px] border-[#B787F5] py-2 px-5 rounded-3xl outline-none;
+                }
+                button{
+                    @apply uppercase text-white text-sm lg:text-base bg-transparent hover:bg-[#B787F5] hover:text-black font-normal transition-all ease-in-out duration-300 py-2 px-10 border-[1px] border-[#B787F5] rounded-3xl;
+                    font-family: 'Orbitron';
+                    letter-spacing: 2px;
+                }
+            }
+
+    }
+
+
 }
