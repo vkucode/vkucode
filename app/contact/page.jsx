@@ -70,6 +70,15 @@ export default function Contact() {
                     
                 }, 1500);
             }
+            else if (currentStep === 6) {
+                await Writer.write("Votre message a ete envoie avec succes, merci pour le temps acorde!");
+                setTimeout(() => {
+                    document.querySelector('#options6').classList.remove("hidden");
+                    document.querySelector('#options6').classList.add("flex")
+                    document.querySelector('#options6').classList.add("animate__fadeIn")
+                    
+                }, 1500);
+            }
         };
 
         initWriter();
@@ -130,7 +139,7 @@ export default function Contact() {
             setCurrentStep(6);
             setTimeout(() => {
                 if (isClient) router.push('/accueil'); // Redirecționare la pagina principală
-            }, 3000);
+            }, 7000);
         } else {
             // Tratează eroarea
             console.error('Eroare la trimiterea emailului.');
@@ -211,11 +220,13 @@ export default function Contact() {
                     )}
 
                     {currentStep === 6 && (
-                        <div>
-                            <div className={styles.text} id="glitch_step6">
-                                Votre message a ete envoie avec succes, merci pour le temps acorde!
+                        <div >
+                            <div className={styles.text} id="glitch_step6"></div>
+                            <div className={`${styles.fadeInText} animate__animated hidden`} id='options6'>
+                                <p>
+                                    Retour sur la page d'accueil dans 3 secondes
+                                </p>
                             </div>
-                            <div className={styles.fadeInText}>Retour sur la page d'accueil dans 3 secondes</div>
                         </div>
                     )}
                 </div>
