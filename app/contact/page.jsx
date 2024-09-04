@@ -110,7 +110,7 @@ export default function Contact() {
         formData.append('budgetRange', budgetRange);
         formData.append('source', source);
 
-        const response = await fetch('/api/mail', {
+        const response = await fetch('/api/mail.php', {
             method: 'POST',
             body: formData,
         });
