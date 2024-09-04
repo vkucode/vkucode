@@ -105,22 +105,36 @@ export default function Contact() {
 
     const handleFormSubmit = async (e) => {
         e.preventDefault();
-        const formData = new FormData(e.target);
-        formData.append('projectType', projectType);
-        formData.append('budgetRange', budgetRange);
-        formData.append('source', source);
-
-        const response = await fetch('http://194.164.72.37/mail.php', {
+    
+        const formData = {
+            name: e.target.name.value,
+            phone: e.target.phone.value,
+            email: e.target.email.value,
+            company: e.target.company.value,
+            message: e.target.message.value,
+            projectType: projectType,
+            budgetRange: budgetRange,
+            source: source,
+        };
+    
+        const response = await fetch('/api/sendEmail', {
             method: 'POST',
-            body: formData,
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
         });
-
-        // if (response.ok) {
-        //     setCurrentStep(6);
-        //     setTimeout(() => {
-        //         if (isClient) router.push('/accueil'); // Verificăm dacă suntem pe client
-        //     }, 3000);
-        // }
+    
+        if (response.ok) {
+            // Tratează succesul, poți trece la următorul slide
+            setCurrentStep(6);
+            setTimeout(() => {
+                if (isClient) router.push('/accueil'); // Redirecționare la pagina principală
+            }, 3000);
+        } else {
+            // Tratează eroarea
+            console.error('Eroare la trimiterea emailului.');
+        }
     };
 
     return (
