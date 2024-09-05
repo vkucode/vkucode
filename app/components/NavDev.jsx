@@ -57,6 +57,15 @@ const Logo = () => {
   );
 };
 
+const LogoMobile = () => {
+  return (
+    <a href="/accueil">
+      <Image src="/img/logo.png" alt="vkucode" className="w-full max-w-[70px] lg:max-w-[80px]" width={100} height={100} />
+    </a>
+  );
+};
+
+
 const Links = () => {
   return (
     <div className="flex items-center gap-6">
@@ -266,7 +275,7 @@ const MobileMenu = () => {
             className="fixed left-0 top-0 flex h-screen w-full flex-col bg-[var(--color-bg-black)]"
           >
             <div className="flex items-center justify-between p-6">
-              <Logo color="black" />
+              <LogoMobile color="black" />
               <button onClick={() => setOpen(false)}>
                 <FiX className="text-3xl text-white" />
               </button>
@@ -308,6 +317,6 @@ const LINKS = [
   // },
   {
     text: "Developpement",
-    href: "#",
+    href: "/development",
   },
 ];
