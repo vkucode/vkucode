@@ -61,7 +61,7 @@ export default function Contact() {
                     document.querySelector('#options2').classList.add("flex")
                     document.querySelector('#options2').classList.add("animate__fadeIn")
                     
-                }, 3500);
+                }, 4000);
             } else if (currentStep === 3) {
                 // Inițiem animația de scriere pentru slide-ul 3
                 typeWriter("Quelle est votre fourchette de budget pour ce projet?", 'questionText3', 35);
@@ -79,7 +79,7 @@ export default function Contact() {
                     document.querySelector('#options4').classList.add("flex")
                     document.querySelector('#options4').classList.add("animate__fadeIn")
                     
-                }, 3500);
+                }, 4000);
             } else if (currentStep === 5) {
                 typeWriter("Parfait, maintenant pouvez-vous s'il vous plait nous donner les details qui nous manquent", 'questionText5', 35);
                 setTimeout(() => {
@@ -87,7 +87,7 @@ export default function Contact() {
                     document.querySelector('#options5').classList.add("flex")
                     document.querySelector('#options5').classList.add("animate__fadeIn")
                     
-                }, 3500);
+                }, 4000);
             }
             else if (currentStep === 6) {
                 await Writer.write("Votre message a ete envoie avec succes, merci pour le temps acorde!");
