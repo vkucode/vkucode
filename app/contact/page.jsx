@@ -20,6 +20,22 @@ export default function Contact() {
         setIsClient(true); // Asta se va executa doar pe client, asigurând router-ul
     }, []);
 
+    const typeWriter = (text, elementId, speed) => {
+        let i = 0;
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.innerHTML = ''; // Resetăm conținutul elementului
+            const interval = setInterval(() => {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(interval); // Oprim intervalul după ce textul este complet scris
+                }
+            }, speed);
+        }
+    };
+
     useEffect(() => {
         const Writer = new GlitchedWriter(`#glitch_step${currentStep}`, { letterize: true }, logString);
 
@@ -38,37 +54,40 @@ export default function Contact() {
             }
             // Setup glitched animations for further steps
             if (currentStep === 2) {
-                await Writer.write("Vous souhaitez travailler avec notre equipe? Quel genre de projet voulez vous realiser?");
+                // Inițiem animația de scriere pentru slide-ul 2
+                typeWriter("Vous souhaitez travailler avec notre équipe? Quel genre de projet voulez-vous réaliser?", 'questionText2', 35);
                 setTimeout(() => {
                     document.querySelector('#options2').classList.remove("hidden");
                     document.querySelector('#options2').classList.add("flex")
                     document.querySelector('#options2').classList.add("animate__fadeIn")
                     
-                }, 1500);
+                }, 3500);
             } else if (currentStep === 3) {
-                await Writer.write("Quelle est votre fourchette de budget pour ce projet?");
+                // Inițiem animația de scriere pentru slide-ul 3
+                typeWriter("Quelle est votre fourchette de budget pour ce projet?", 'questionText3', 35);
                 setTimeout(() => {
                     document.querySelector('#options3').classList.remove("hidden");
                     document.querySelector('#options3').classList.add("flex")
                     document.querySelector('#options3').classList.add("animate__fadeIn")
                     
-                }, 1500);
+                }, 2500);
             } else if (currentStep === 4) {
-                await Writer.write("On est pas encore dans le livres d'histoire, alors comment avez-vous entendu parler de nous?");
+                // Inițiem animația de scriere pentru slide-ul 4
+                typeWriter("On n'est pas encore dans les livres d'histoire, alors comment avez-vous entendu parler de nous?", 'questionText4', 35);
                 setTimeout(() => {
                     document.querySelector('#options4').classList.remove("hidden");
                     document.querySelector('#options4').classList.add("flex")
                     document.querySelector('#options4').classList.add("animate__fadeIn")
                     
-                }, 1500);
+                }, 3500);
             } else if (currentStep === 5) {
-                await Writer.write("Parfait, maintenant pouvez-vous s'il vous plait nous donner les details qui nous manquent");
+                typeWriter("Parfait, maintenant pouvez-vous s'il vous plait nous donner les details qui nous manquent", 'questionText5', 35);
                 setTimeout(() => {
                     document.querySelector('#options5').classList.remove("hidden");
                     document.querySelector('#options5').classList.add("flex")
                     document.querySelector('#options5').classList.add("animate__fadeIn")
                     
-                }, 1500);
+                }, 3500);
             }
             else if (currentStep === 6) {
                 await Writer.write("Votre message a ete envoie avec succes, merci pour le temps acorde!");
@@ -165,7 +184,7 @@ export default function Contact() {
 
                     {currentStep === 2 && (
                         <div>
-                            <div className={styles.text} id="glitch_step2"></div>
+                            <div className={`${styles.text} typing-cursor`} id="questionText2"></div>
                             <div className={`${styles.fadeInOptionsStep2} animate__animated hidden`} id='options2'>
                                 <button onClick={() => handleOptionClick('Complete website')}>Complete website</button>
                                 <button onClick={() => handleOptionClick('UX & WebDesign')}>UX & WebDesign</button>
@@ -179,7 +198,7 @@ export default function Contact() {
 
                     {currentStep === 3 && (
                         <div>
-                            <div className={styles.text} id="glitch_step3"></div>
+                            <div className={`${styles.text} typing-cursor`} id="questionText3"></div>
                             <div className={`${styles.fadeInOptionsStep2} animate__animated hidden`} id='options3'>
                                 <button onClick={() => handleOptionClick('2k - 5k')}>2k - 5k</button>
                                 <button onClick={() => handleOptionClick('5k - 10k')}>5k - 10k</button>
@@ -191,7 +210,7 @@ export default function Contact() {
 
                     {currentStep === 4 && (
                         <div>
-                            <div className={styles.text} id="glitch_step4"></div>
+                            <div className={`${styles.text} typing-cursor`} id="questionText4"></div>
                             <div className={`${styles.fadeInOptionsStep2} animate__animated hidden`} id='options4'>
                                 <button onClick={() => handleOptionClick('Un article')}>Un article</button>
                                 <button onClick={() => handleOptionClick('Un ami')}>Un ami</button>
@@ -203,7 +222,7 @@ export default function Contact() {
 
                     {currentStep === 5 && (
                         <div>
-                            <div className={styles.text} id="glitch_step5"></div>
+                            <div className={`${styles.text} typing-cursor`} id="questionText5"></div>
                             <form onSubmit={handleFormSubmit} className={`${styles.fadeInForm} animate__animated hidden`} id='options5'>
                                 <div>
                                     <input name="name" placeholder="Nom Prenom" required />

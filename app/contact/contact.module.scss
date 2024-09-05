@@ -31,6 +31,19 @@
                 @apply uppercase text-xs lg:text-sm text-white mt-5 w-full flex-col justify-center items-center;
                 font-family: 'Montserrat';
             }
+
+            @keyframes blink {
+                0% { opacity: 1; }
+                50% { opacity: 0; }
+                100% { opacity: 1; }
+              }
+              
+              .typing-cursor::after {
+                content: '|';
+                font-weight: bold;
+                animation: blink 1s infinite;
+              }
+              
             .fadeInForm{
                 @apply flex-col justify-center w-full max-w-[620px] mx-auto px-5 items-center gap-5 mt-10 z-10;
                 div{
