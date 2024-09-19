@@ -1,43 +1,25 @@
 import React from "react";
 import { Card } from "../../utils/Card";
 import { CalloutChip } from "../../utils/CalloutChip";
+import Image from "next/image";
 import { SiX } from "react-icons/si";
 import { CornerBlur } from "../../utils/CornerBlur";
+import BubbleButton from "../../buttons/BubbleButton";
 
 export const MiniCard2 = () => {
   return (
     <div className="col-span-2 h-[415px] sm:h-[375px] md:col-span-1">
       <Card>
-        <CalloutChip>Callout #3</CalloutChip>
-        <p className="mb-1.5 text-2xl">Let customers talk for you</p>
+        <CalloutChip>façon #3</CalloutChip>
+        <p className="mb-1.5 text-2xl text-white">Statistique <span className="bg-gradient-to-br from-purple-300 to-purple-700 bg-clip-text text-transparent">du projet</span></p>
         <p className="text-zinc-400">
-          Someone else saying that they love you is a lot more powerful than
-          saying you love yourself.
+          Suivez le trafic de votre site via l'espace client pour une analyse detaillee.
         </p>
+        <BubbleButton className="mt-2">Espace Client</BubbleButton>
 
-        <div className="absolute -bottom-2 left-2 right-2 z-10 h-44 rounded-xl border border-zinc-700 bg-zinc-800/50 p-4">
-          <div className="mb-3 flex gap-3">
-            <img
-              src="https://api.dicebear.com/7.x/avataaars/svg?seed=Don"
-              alt="Placeholder image for faux user Don Donaldson"
-              className="size-10 shrink-0 rounded-full"
-            />
-            <div>
-              <p className="text-sm font-semibold text-zinc-50">
-                Don Donaldson
-              </p>
-              <p className="text-xs text-zinc-400">@donnydiesel</p>
-            </div>
-          </div>
-          <p>
-            <span className="font-semibold text-blue-300">@your_company</span>
-            &apos;s automation tools are the best in the industry! Not sure how
-            we ever lived without them ❤️
-          </p>
-
-          <SiX className="absolute right-4 top-4 text-[#1F9AF1]" />
+        <div className="absolute bottom-0 left-2 right-2 z-10 h-40 rounded-xl border border-zinc-700 bg-zinc-800/50">
+          <Image className="w-full rounded-xl" src="/img/accueil/header/chart.png" width={400} height={400} alt="chart VKU" />
         </div>
-
         <CornerBlur />
       </Card>
     </div>

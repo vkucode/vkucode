@@ -10,6 +10,7 @@ import {
   motion,
 } from "framer-motion";
 import useMeasure from "react-use-measure";
+import GradientShadowButton from "../accueil/components/GradientBTN";
 
 const Navbar = () => {
   return (
@@ -112,13 +113,7 @@ const NavLink = ({ children, href, FlyoutContent }) => {
 const CTAs = () => {
   return (
     <div className="flex items-center gap-3">
-      {/* <button className="flex items-center gap-2 rounded-lg border-2 border-white px-4 py-2 font-semibold text-white transition-colors hover:bg-white hover:text-black">
-        <FaUserCircle />
-        <span>Sign in</span>
-      </button> */}
-      <a href="/contact" className="rounded-3xl bg-gradient-to-b from-[#B787F5] to-[#55367E] px-4 py-2 font-semibold text-white transition-colors hover:text-white">
-        Contact
-      </a>
+      <GradientShadowButton text="Contact" link="/contact" />
     </div>
   );
 };

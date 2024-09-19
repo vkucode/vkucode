@@ -33,7 +33,7 @@ export default function HeaderAccueil(){
                     <p>Creez <span>de solutions Web</span> pour vos startups, clients et projets, sans avoir a penser au design</p>
                     <div className='flex flex-row justify-center items-center gap-5 mt-5'>
                         <GradientShadowButton text="Contact" link="/contact" />
-                        <GradientShadowButton text="Nos Services" link="/services" />
+                        <a href="#" className='text-white capitalize text-sm lg:text-base border-2 border-zinc-500 py-2 px-5 scale-95 rounded-md bg-opacity-20 hover:bg-opacity-50 bg-zinc-700 hover:scale-100 duration-200 ease-in-out'>nos&nbsp;services</a>
                     </div>
                 </div>
                 <Partners />

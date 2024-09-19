@@ -3,26 +3,24 @@ import { CalloutChip } from "../../utils/CalloutChip";
 import { Card } from "../../utils/Card";
 import { motion } from "framer-motion";
 import {
-  SiAuth0,
-  SiBuildkite,
   SiGithub,
-  SiPlanetscale,
+  SiMongodb,
   SiReact,
-  SiSupabase,
-  SiTwilio,
-  SiZapier,
+  SiAdobe,
+  SiFigma,
 } from "react-icons/si";
+import { RiNextjsFill, RiTailwindCssFill  } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
 
 export const LongCard = () => {
   return (
     <div className="col-span-2 h-fit sm:h-[209px]">
       <Card>
         <div className="relative z-20">
-          <CalloutChip>Callout #4</CalloutChip>
-          <p className="mb-1.5 text-2xl">Talk about integrations</p>
-          <p className="max-w-sm text-zinc-400">
-            If you connect with tools that people already know and use, show it
-            off!
+          <CalloutChip>façon #4</CalloutChip>
+          <p className="mb-1.5 text-2xl text-white font-semibold">Nos <span className="bg-gradient-to-br from-purple-300 to-purple-700 bg-clip-text text-transparent">Technologies</span></p>
+          <p className="max-w-md text-sm text-zinc-400">
+            <span className="text-white">Afin de concevoir</span> des solutions performantes et adaptees a vos besoins, nous employons differentes technologies et outils avec nos partenaires. Afin de garantir le meilleur service.
           </p>
         </div>
         <div className="absolute bottom-0 right-0 top-0 z-10 w-48 bg-gradient-to-r from-zinc-950/0 to-zinc-950" />
@@ -81,7 +79,7 @@ const SpinningLogos = () => {
           sizes.iconWrapperWidth +
           sizes.ringPadding,
       }}
-      className="absolute right-0 top-0 z-0 grid translate-x-1/3 place-content-center rounded-full bg-blue-900/50 shadow-inner"
+      className="absolute right-0 top-0 z-0 grid translate-x-1/3 place-content-center rounded-full bg-purple-900/50 shadow-inner"
     >
       <motion.div
         initial={{ rotate: 0 }}
@@ -117,7 +115,7 @@ const SpinningLogos = () => {
               initial={{ rotate: 0 }}
               animate={{ rotate: -360 }}
               transition={TRANSITION}
-              className="absolute grid place-content-center rounded-full bg-gradient-to-br from-blue-500 to-blue-800 text-blue-50 shadow-lg"
+              className="absolute grid place-content-center rounded-full bg-gradient-to-br from-purple-500 to-purple-800 text-blue-50 shadow-lg"
             >
               <icon.Icon
                 style={{
@@ -164,25 +162,25 @@ const ICON_DATA = [
     Icon: SiGithub,
   },
   {
-    Icon: SiTwilio,
+    Icon: RiNextjsFill,
   },
   {
     Icon: SiReact,
   },
   {
-    Icon: SiZapier,
+    Icon: RiTailwindCssFill,
   },
   {
-    Icon: SiAuth0,
+    Icon: FaNodeJs,
   },
   {
-    Icon: SiPlanetscale,
+    Icon: SiMongodb,
   },
   {
-    Icon: SiSupabase,
+    Icon: SiAdobe,
   },
   {
-    Icon: SiBuildkite,
+    Icon: SiFigma,
   },
 ];
 

@@ -18,7 +18,7 @@ export const Content = () => {
             Montrez aux gens
             <br />
             <span className="bg-gradient-to-tr from-purple-300 to-purple-700 bg-clip-text text-transparent">
-              ce qui vous rennd superbe
+              ce qui vous rend superbe.
             </span>
           </SectionHeading>
           <SectionSubheading>
@@ -27,8 +27,8 @@ export const Content = () => {
         </SectionHeadingSpacing>
 
         <Grid />
-        <div className="my-12 h-[1px] w-full bg-gradient-to-r from-blue-800/0 via-purple-400/50 to-purple-800/0 md:my-20" />
-        <SimpleGrid />
+        {/* <div className="my-12 h-[1px] w-full bg-gradient-to-r from-blue-800/0 via-purple-400/50 to-purple-800/0 md:my-20" />
+        <SimpleGrid /> */}
       </MaxWidthWrapper>
     </section>
   );
