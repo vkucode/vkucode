@@ -29,7 +29,7 @@ export default async function handler(req, res) {
     try {
       // Trimite emailul
       await transporter.sendMail({
-        from: '"VKUCode" <noreply@vkucode.com>', // Expeditorul
+        from: '"VKU Code" <noreply@vkucode.com>', // Expeditorul
         to: "admin@vkucode.com", // Destinatarul (poți adăuga mai mulți separați prin virgulă)
         subject: "Nou mesaj de contact", // Subiectul emailului
         text: `
