@@ -7,6 +7,16 @@ import { CornerBlur } from "../../utils/CornerBlur";
 import BubbleButton from "../../buttons/BubbleButton";
 
 export const MiniCard2 = () => {
+
+  const triggerVibration = () => {
+      if (navigator.vibrate) {
+          navigator.vibrate([100]);
+      } else {
+          console.log("Dispozitivul nu suportă vibrații.");
+      }
+    };
+
+
   return (
     <div className="col-span-2 h-[415px] sm:h-[375px] md:col-span-1">
       <Card>
@@ -15,7 +25,7 @@ export const MiniCard2 = () => {
         <p className="text-zinc-400">
           Suivez le trafic de votre site via l'espace client pour une analyse detaillee.
         </p>
-        <BubbleButton className="mt-2">Espace Client</BubbleButton>
+        <BubbleButton className="mt-2" onClick={triggerVibration}>Espace Client</BubbleButton>
 
         <div className="absolute bottom-0 left-2 right-2 z-10 h-40 rounded-xl border border-zinc-700 bg-zinc-800/50">
           <Image className="w-full rounded-xl" src="/img/accueil/header/chart.png" width={400} height={400} alt="chart VKU" />
