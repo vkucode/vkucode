@@ -10,7 +10,7 @@ export const MiniCard2 = () => {
 
   const triggerVibration = () => {
       if (navigator.vibrate) {
-          navigator.vibrate([100]);
+          navigator.vibrate([500]);
       } else {
           console.log("Dispozitivul nu suportă vibrații.");
       }
