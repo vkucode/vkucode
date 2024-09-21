@@ -8,13 +8,6 @@ import BubbleButton from "../../buttons/BubbleButton";
 
 export const MiniCard2 = () => {
 
-  const triggerVibration = () => {
-      if (navigator.vibrate) {
-          navigator.vibrate([500]);
-      } else {
-          console.log("Dispozitivul nu suportă vibrații.");
-      }
-    };
 
 
   return (
@@ -25,7 +18,7 @@ export const MiniCard2 = () => {
         <p className="text-zinc-400">
           Suivez le trafic de votre site via l'espace client pour une analyse detaillee.
         </p>
-        <BubbleButton className="mt-2" onClick={triggerVibration}>Espace Client</BubbleButton>
+        <BubbleButton className="mt-2" link="/espace-client">Espace Client</BubbleButton>
 
         <div className="absolute bottom-0 left-2 right-2 z-10 h-40 rounded-xl border border-zinc-700 bg-zinc-800/50">
           <Image className="w-full rounded-xl" src="/img/accueil/header/chart.png" width={400} height={400} alt="chart VKU" />

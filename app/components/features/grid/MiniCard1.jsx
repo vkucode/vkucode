@@ -15,7 +15,7 @@ export const MiniCard1 = () => {
         </div>
         <p className="mb-1.5 text-white text-center text-2xl">Référencement <span className="bg-gradient-to-br from-purple-300 to-purple-700 bg-clip-text text-transparent">naturel</span></p>
         <p className="mb-6 text-center text-zinc-400"><span className="text-white">Mettez en valeur</span> votre projet grace a notre expertise en SEO</p>
-        <BubbleButton className="mx-auto">Nous contacter</BubbleButton>
+        <BubbleButton className="mx-auto" link="/contact">Nous contacter</BubbleButton>
 
         <Ping />
       </Card>

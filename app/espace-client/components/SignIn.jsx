@@ -7,7 +7,7 @@ import { twMerge } from "tailwind-merge";
 
 export const DarkGridAuth = () => {
   return (
-    <div className="bg-zinc-950 w-screen h-dvh flex flex-col justify-center items-center py-20 text-zinc-200 selection:bg-zinc-600">
+    <div className="bg-zinc-950 w-screen h-screen flex flex-col justify-center items-center py-20 text-zinc-200 selection:bg-zinc-600">
       <BubbleButton className="absolute left-4 top-6 text-sm" link="/accueil">
         <FiArrowLeft />
         Retourner

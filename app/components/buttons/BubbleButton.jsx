@@ -1,11 +1,11 @@
 import { twMerge } from "tailwind-merge";
 
- const BubbleButton = ({ children, className, ...rest }) => {
+ const BubbleButton = ({ children, className, link, ...rest }) => {
   return (
-    <button
+    <a href={link}
       className={twMerge(
         `
-            relative z-0 flex items-center gap-2 overflow-hidden whitespace-nowrap rounded-md 
+            relative z-0 flex items-center w-fit gap-2 overflow-hidden whitespace-nowrap rounded-md 
             border border-zinc-700 bg-gradient-to-br from-zinc-800 to-zinc-950
            px-3 py-1.5
            text-zinc-50 transition-all duration-300
@@ -25,7 +25,7 @@ import { twMerge } from "tailwind-merge";
       {...rest}
     >
       {children}
-    </button>
+    </a>
   );
 };
 
