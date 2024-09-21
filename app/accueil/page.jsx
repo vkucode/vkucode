@@ -6,10 +6,11 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import SmartDevelopment from './components/SmartDevelopment'
 import Partners from './components/Partners'
-import GalleryAcc from './components/GalleryAcc'
+import GalleryAccV2 from './components/GalleryAccV2'
 import AccContactForm from './components/AccContactForm'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import CustomersSection from '../components/customers/CustomersSection'
 
 export default function Accueil() {
     return (
@@ -17,10 +18,10 @@ export default function Accueil() {
             <section className={styles.accueilPage}>
                 <Navbar />
                 <HeaderAccueil />
+                <GalleryAccV2 />
                 <BandText />
                 <SmartDevelopment />
-                <Partners />
-                <BandText />
+                <CustomersSection />
                 <AccContactForm />
                 <Footer />
             </section>

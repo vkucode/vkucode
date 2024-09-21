@@ -236,6 +236,37 @@
     }
 }
 
+// Gallery Accueil V2 version
+
+.galleryAccV2{
+    @apply w-screen flex flex-col justify-center items-center relative;
+    .galleryContent{
+        @apply w-full relative h-[60vh] lg:h-[80vh] overflow-hidden flex flex-col justify-center items-center;
+        .galleryBGProjects{
+            @apply w-full flex flex-row justify-center items-center gap-2 bg-zinc-900 relative z-10;
+            .elementsUp{
+                @apply w-[20%] flex flex-col justify-center items-center gap-2;
+            }
+            .elementsDown{
+                @apply w-[20%] flex flex-col justify-center items-center gap-2;
+            }
+            img{
+                @apply w-full h-auto;
+            }
+        }
+        .galleryTitle{
+            @apply absolute z-20 w-full h-full bg-black bg-opacity-90 backdrop-blur-sm flex flex-col justify-center items-center;
+            h1{
+                @apply text-white uppercase text-8xl lg:text-9xl font-extrabold;
+                letter-spacing: 1.5px; 
+                font-family: 'Thunder'
+            }
+
+        }
+    }
+}
+
+
 // Accueil Contact Form
 
 .contactFormSection{

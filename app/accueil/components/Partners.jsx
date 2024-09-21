@@ -7,7 +7,7 @@ export default function Partners(){
         <>
             <section className={styles.partnersBand}>
                 <div className={styles.partnersHeader}>
-                    <h1>Ils nous ont fait&nbsp;<span>confiance !</span></h1>
+                    <h1>On vous presente nos&nbsp;<span>parteners !</span></h1>
                 </div>
                 <div className={styles.forward}>
                     <Image src='/img/accueil/partners/microsoft.png' width={200} height={200} />
