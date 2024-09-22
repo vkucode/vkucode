@@ -57,7 +57,7 @@ export default function AccContactForm(){
                     <div className={styles.formSection}>
                         <div className={styles.headerForm}>
                             <h1>Ton&nbsp;projet nous&nbsp;<span>intéresse&nbsp;!</span></h1>
-                            <a href="/devis">devis</a>
+                            <a href="/contact">devis</a>
                             <div className={styles.separator}>
                                 <div>&nbsp;</div>
                                 <h2>ou</h2>
