@@ -9,6 +9,7 @@ import { CornerGrid } from "../utils/CornerGrid";
 import { SectionHeading } from "../utils/SectionHeading";
 import { SectionSubheading } from "../utils/SectionSubheading";
 import { SectionHeadingSpacing } from "../utils/SectionHeadingSpacing";
+import { BGGrid } from "../features/grid/BgGrid";
 
 export default function Customers(){
   const { width } = useWindowSize();
@@ -21,7 +22,7 @@ export default function Customers(){
     <section id="testimonials" className="relative overflow-hidden">
       <MaxWidthWrapper className="relative z-10 py-20 md:py-40">
         <SectionHeadingSpacing>
-          <SectionHeading>Loved by our customers</SectionHeading>
+          <SectionHeading>Les avis de nos <span className="text-purple-500">clients !</span></SectionHeading>
           <SectionSubheading>
             People trust people. Show off all of the great reviews of your
             product to ease the minds of potential customers.
@@ -76,6 +77,7 @@ export default function Customers(){
           {open ? "View less" : "View more"}
         </BubbleButton>
       </MaxWidthWrapper>
+      <BGGrid />
     </section>
 
     </>

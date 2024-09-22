@@ -6,8 +6,6 @@ export default function CustomersSection(){
     return(
         <>
         <Customers />
-        <CornerBlur />
-        <BGGrid />
         </>
     )
 }
