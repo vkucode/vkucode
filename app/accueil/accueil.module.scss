@@ -98,6 +98,14 @@
             @apply uppercase font-bold text-7xl md:text-9xl text-[#EDEDED] mt-4;
             font-family: 'Thunder';
         }
+
+        p{ 
+            @apply text-white font-extrabold text-center text-base lg:text-2xl -mt-1 mb-5 lg:-mt-2;  
+            font-family: 'DM Sans';
+            span{
+                @apply text-[var(--color-main)];
+            }
+        }
     }
 
     .smart {

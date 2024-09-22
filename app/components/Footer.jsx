@@ -1,19 +1,140 @@
-'use client'
-import styles from './components.module.scss'
+import React from "react";
+import { MaxWidthWrapper } from "./utils/MaxWidthWrapper";
+import Image from "next/image";
+import { SiInstagram, SiAwwwards, SiLinkedin, SiTiktok } from "react-icons/si";
+import Link from "next/link";
 
 export default function Footer(){
-    return(
-        <>
-            <section className={styles.footerSection}>
-                <div>
-                    <a href="/legales/politique-de-confidentialite">Politique de confidentialite</a>&nbsp;<span>-</span>&nbsp;
-                    <a href="/legales/cookies">Cookies</a>&nbsp;<span>-</span>&nbsp;
-                    <a href="/legales/mentions-legales">Mentions légales</a>
-                </div>
-                <div>
-                    <h1>©2024&nbsp;vkucode</h1>
-                </div>
-            </section>
-        </>
-    )
-}
+
+
+    const LogoColumn = () => {
+        return (
+          <div className="col-span-6 md:col-span-4 flex flex-col justify-start items-start">
+            <Image src="/img/logoVKU.png" className="w-full max-w-[70px] lg:max-w-[100px]" width={300} height={300} alt="vkucode" />
+            <span className="mt-4 inline-block text-sm w-full max-w-[300px] text-zinc-400">
+            Experts en Création de Sites Web sur Mesure & Cybersécurité Avancée.
+            </span>
+            <span className="mt-1 inline-block text-sm text-zinc-400">
+              ©VKU CODE - Tous droits réservés.
+            </span>
+          </div>
+        );
+      };
+      
+      const GenericColumn = ({ title, links }) => {
+        return (
+          <div className="col-span-6 space-y-2 text-sm md:col-span-2">
+            <span className="block text-zinc-50">{title}</span>
+            {links.map((l) => (
+              <Link
+                key={l.title}
+                href={l.href}
+                className="flex items-center gap-1.5 text-zinc-400 transition-colors hover:text-zinc-200 hover:underline"
+              >
+                {l.Icon && <l.Icon />}
+                {l.title}
+              </Link>
+            ))}
+          </div>
+        );
+      };
+
+      
+  return (
+    <footer className="relative overflow-hidden py-12 bg-zinc-900">
+      <MaxWidthWrapper className="relative z-20 grid grid-cols-12 gap-x-1.5 gap-y-6">
+        <LogoColumn />
+        <GenericColumn
+          title="Services"
+          links={[
+            {
+              title: "Creation Site Web",
+              href: "/services",
+            },
+            {
+              title: "Design Web UI/UX",
+              href: "/#testimonials",
+            },
+            {
+              title: "Cybersecurite",
+              href: "/#pricing",
+            },
+            {
+              title: "Application Mobile",
+              href: "/#pricing",
+            },
+            {
+              title: "Application Desktop",
+              href: "/#pricing",
+            },
+          ]}
+        />
+        <GenericColumn
+          title="Solutions"
+          links={[
+            {
+              title: "Application Web",
+              href: "/#",
+            },
+            {
+              title: "E-commerce",
+              href: "/#",
+            },
+            {
+              title: "For Devs",
+              href: "/#",
+            },
+            {
+              title: "YzEat",
+              href: "/#",
+            },
+          ]}
+        />
+        <GenericColumn
+          title="Legal"
+          links={[
+            {
+              title: "Mentions Legales",
+              href: "/#",
+            },
+            {
+              title: "Politique de cookies",
+              href: "/#",
+            },
+            {
+              title: "Politique de confidentialite",
+              href: "/#",
+            },
+          ]}
+        />
+
+        <GenericColumn
+          title="Socials"
+          links={[
+            {
+              title: "Instagram",
+              href: "/#",
+              Icon: SiInstagram,
+            },
+            {
+              title: "TikTok",
+              href: "/#",
+              Icon: SiTiktok,
+            },
+            {
+              title: "Linkedin",
+              href: "/#",
+              Icon: SiLinkedin,
+            }, 
+            {
+              title: "Awwwards",
+              href: "/#",
+              Icon: SiAwwwards,
+            }, 
+          ]}
+        />
+      </MaxWidthWrapper>
+    </footer>
+  );
+};
+
