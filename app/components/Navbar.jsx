@@ -302,7 +302,7 @@ const LINKS = [
     // component: CareersContent,
   },
   {
-    text: "Developpement",
+    text: "Gallerie",
     href: "/development",
   },
 ];

@@ -21,15 +21,15 @@ export default async function handler(req, res) {
       port: 465,
       secure: true, // True pentru port 465, false pentru alte porturi
       auth: {
-        user: "noreply@vkucode.com", // Contul tău de email
-        pass: "noreplyVku23#", // Parola contului de email
+        user: process.env.EMAIL, // Contul tău de email
+        pass: process.env.PASS, // Parola contului de email
       },
     });
 
     try {
       // Trimite emailul
       await transporter.sendMail({
-        from: '"VKU Code" <noreply@vkucode.com>', // Expeditorul
+        from: '"VKU Code" <admin@vkucode.com>', // Expeditorul
         to: "admin@vkucode.com", // Destinatarul (poți adăuga mai mulți separați prin virgulă)
         subject: "Nou mesaj de contact", // Subiectul emailului
         text: `
