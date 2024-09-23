@@ -53,19 +53,19 @@ export default function Footer(){
             },
             {
               title: "Design Web UI/UX",
-              href: "/#testimonials",
+              href: "/services#design",
             },
             {
               title: "Cybersecurite",
-              href: "/#pricing",
+              href: "/services#cybersecurite",
             },
             {
               title: "Application Mobile",
-              href: "/#pricing",
+              href: "/services#application",
             },
             {
               title: "Application Desktop",
-              href: "/#pricing",
+              href: "/services#software",
             },
           ]}
         />
@@ -74,19 +74,19 @@ export default function Footer(){
           links={[
             {
               title: "Application Web",
-              href: "/#",
+              href: "/solutions",
             },
             {
               title: "E-commerce",
-              href: "/#",
+              href: "/solutions",
             },
             {
               title: "For Devs",
-              href: "/#",
+              href: "/solutions",
             },
             {
               title: "YzEat",
-              href: "/#",
+              href: "/solutions",
             },
           ]}
         />
@@ -95,15 +95,15 @@ export default function Footer(){
           links={[
             {
               title: "Mentions Legales",
-              href: "/#",
+              href: "/legales/mentions-legales",
             },
             {
               title: "Politique de cookies",
-              href: "/#",
+              href: "/legales/politique-de-cookies",
             },
             {
               title: "Politique de confidentialite",
-              href: "/#",
+              href: "/legales/politique-de-confidentialite",
             },
           ]}
         />

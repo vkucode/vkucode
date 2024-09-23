@@ -23,34 +23,38 @@ export default function Contact() {
     const typeWriter = (text, elementId, speed) => {
         let i = 0;
         const element = document.getElementById(elementId);
+    
         if (element) {
-            element.innerHTML = ''; // Resetăm conținutul elementului
-            const interval = setInterval(() => {
+            clearInterval(element._interval); // Oprirea unui interval anterior dacă există
+            element.innerHTML = ''; // Resetăm conținutul elementului pentru a preveni duplicarea
+    
+            // Creăm un nou interval
+            element._interval = setInterval(() => {
                 if (i < text.length) {
                     element.innerHTML += text.charAt(i);
                     i++;
                 } else {
-                    clearInterval(interval); // Oprim intervalul după ce textul este complet scris
+                    clearInterval(element._interval); // Oprim intervalul după ce textul este complet scris
                 }
             }, speed);
         }
     };
 
     useEffect(() => {
-        const Writer = new GlitchedWriter(`#glitch_step${currentStep}`, { letterize: true }, logString);
 
         const initWriter = async () => {
             if (currentStep === 1) {
-                await wait(1000);
-                await Writer.write("Bonjour, je m'appelle Alex, et je suis votre assistant virtuel.");
-                await wait(2000);
-                await Writer.write("Passons directement aux questions, En quoi pourrais-je vous aider?");
+                typeWriter("Bonjour, je m'appelle Alex, et je suis votre assistant virtuel.", 'questionText1', 35);
+                setTimeout(() => {
+                    typeWriter("Passons directement aux questions, En quoi pourrais-je vous aider?", 'questionText1', 35);
+                }, 5000)
+                
                 setTimeout(() => {
                     document.querySelector('#options1').classList.remove("hidden");
                     document.querySelector('#options1').classList.add("flex")
                     document.querySelector('#options1').classList.add("animate__fadeIn")
                     
-                }, 2000);
+                }, 7500);
             }
             // Setup glitched animations for further steps
             if (currentStep === 2) {
@@ -173,8 +177,8 @@ export default function Contact() {
                 <div className={styles.contactContent}>
                     {currentStep === 1 && (
                         <div>
-                            <div className={styles.text} id="glitch_step1"></div>
-                            <div className={`${styles.fadeInOptions} animate__animated hidden`} id='options1'>
+                            <div className={`${styles.text} typing-cursor`} id="questionText1"></div>
+                            <div className={`${styles.fadeInOptionsStep2} animate__animated hidden`} id='options1'>
                                 <button onClick={() => handleOptionClick('Commencer un projet')}>Commencer un projet</button>
                                 <button onClick={() => handleOptionClick('Laisser un mot')}>Laisser un mot</button>
                                 <button onClick={() => handleOptionClick('A propos de nous')}>A propos de nous</button>
