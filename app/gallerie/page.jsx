@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import styles from './gallerie.module.scss';
 import RoundedSlideButton from '../components/buttons/RoundedSlideButton';
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -62,8 +63,8 @@ export default function Gallerie() {
           })}
         </div>
         <div className={styles.controls}>
-          <button onClick={handlePrev}>Prev</button>
-          <button onClick={handleNext}>Next</button>
+          <button onClick={handlePrev}><FaChevronLeft /></button>
+          <button onClick={handleNext}><FaChevronRight /></button>
         </div>
       </section>
       <Footer />

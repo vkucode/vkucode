@@ -8,23 +8,23 @@
   }
   
   .galleryWrap {
-    @apply flex items-center justify-center relative w-full h-full overflow-hidden;
+    @apply flex flex-col items-center justify-center relative w-full h-full overflow-hidden;
   }
   
   .cardGallery {
-    @apply absolute transition-all ease-in-out duration-500;
+    @apply absolute top-[20%] lg:top-auto transition-all ease-in-out duration-500;
     img {
-      @apply object-cover w-full h-auto max-w-[400px] transition-all ease-in-out duration-500;
+      @apply object-cover w-full h-auto max-w-[250px] lg:max-w-[400px] transition-all ease-in-out duration-500;
     }
   
       .info {
-        @apply text-center w-[135%] text-white flex flex-col justify-center items-center absolute top-[30%] left-[-120%] rounded-3xl backdrop-blur-xl bg-black bg-opacity-35 py-14 px-0;
+        @apply absolute left-[-15%] -bottom-48 w-[130%] text-center lg:w-[135%] text-white flex flex-col justify-center items-center lg:top-[30%] lg:left-[-120%] rounded-3xl backdrop-blur-xl bg-black bg-opacity-35 py-5 lg:py-14 px-0;
         h3 {
-          @apply text-8xl mt-3 font-bold uppercase;
+          @apply text-6xl lg:text-8xl mt-3 font-bold uppercase;
             font-family: 'Thunder'
         }
         p {
-          @apply text-2xl font-semibold uppercase;
+          @apply text-sm lg:text-2xl font-semibold uppercase;
           font-family: 'Orbitron';
           letter-spacing: 1.3px;
           span{
@@ -52,9 +52,9 @@
   }
   
   .controls {
-    @apply absolute z-10 bottom-[15%] flex gap-4 mt-4;
+    @apply absolute w-full max-w-[360px] lg:max-w-xs flex flex-row justify-between items-center z-10 bottom-[50%] lg:bottom-[15%] gap-3 mt-4;
     button {
-      @apply px-4 py-2 bg-purple-600 text-white font-bold rounded hover:bg-purple-700;
+      @apply px-4 py-2 text-xl lg:text-3xl text-white font-bold rounded ;
     }
   }
   
