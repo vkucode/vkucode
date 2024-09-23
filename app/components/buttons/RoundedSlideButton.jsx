@@ -6,7 +6,7 @@ const RoundedSlideButton = ({link, text}) => {
   return (
     <a href={link}
       className={`
-        relative z-0 flex items-center gap-2 overflow-hidden rounded-lg border-[1px] 
+        relative z-0 flex items-center w-fit gap-2 overflow-hidden rounded-lg border-[1px] 
         border-purple-400 px-4 py-2 font-semibold
         uppercase text-purple-400 transition-all duration-300
         

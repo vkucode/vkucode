@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&display=swap");
+.galleryPage {
+    @apply w-screen flex flex-col items-center justify-center h-dvh bg-[var(--color-bg-black)];
+    background-image: url("/img/accueil/gallery/degrade.png");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat
+  }
+  
+  .galleryWrap {
+    @apply flex items-center justify-center relative w-full h-full overflow-hidden;
+  }
+  
+  .cardGallery {
+    @apply absolute transition-all ease-in-out duration-500;
+    img {
+      @apply object-cover w-full h-auto max-w-[400px] transition-all ease-in-out duration-500;
+    }
+  
+      .info {
+        @apply text-center w-[135%] text-white flex flex-col justify-center items-center absolute top-[30%] left-[-120%] rounded-3xl backdrop-blur-xl bg-black bg-opacity-35 py-14 px-0;
+        h3 {
+          @apply text-8xl mt-3 font-bold uppercase;
+            font-family: 'Thunder'
+        }
+        p {
+          @apply text-2xl font-semibold uppercase;
+          font-family: 'Orbitron';
+          letter-spacing: 1.3px;
+          span{
+            @apply text-[var(--color-main)]
+          }
+        }
+
+      }
+  
+    &.posMinusTwo {
+      @apply opacity-25  scale-75 transition-all ease-in-out duration-300 translate-x-[-220%];
+    }
+  
+    &.posMinusOne {
+      @apply opacity-50  scale-90 transition-all ease-in-out duration-300 translate-x-[-120%];
+    }
+  
+    &.posOne {
+      @apply opacity-50  scale-90 transition-all ease-in-out duration-300 translate-x-[120%];
+    }
+  
+    &.posTwo {
+      @apply opacity-25  scale-75 transition-all ease-in-out duration-300 translate-x-[220%];
+    }
+  }
+  
+  .controls {
+    @apply absolute z-10 bottom-[15%] flex gap-4 mt-4;
+    button {
+      @apply px-4 py-2 bg-purple-600 text-white font-bold rounded hover:bg-purple-700;
+    }
+  }
+  
