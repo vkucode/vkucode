@@ -298,11 +298,11 @@ const LINKS = [
   },
   {
     text: "Solutions",
-    href: "#",
+    href: "/solutions",
     // component: CareersContent,
   },
   {
     text: "Gallerie",
-    href: "/development",
+    href: "/gallerie",
   },
 ];
