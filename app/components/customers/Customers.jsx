@@ -73,7 +73,7 @@ export default function Customers(){
           onClick={() => setOpen((pv) => !pv)}
           className="mx-auto mt-12"
         >
-          {open ? "View less" : "View more"}
+          {open ? "Voir moins" : "Voir plus"}
         </BubbleButton>
       </MaxWidthWrapper>
       <BGGrid />
