@@ -99,7 +99,7 @@ export default function Footer(){
             },
             {
               title: "Politique de cookies",
-              href: "/legales/politique-de-cookies",
+              href: "/legales/cookies",
             },
             {
               title: "Politique de confidentialite",

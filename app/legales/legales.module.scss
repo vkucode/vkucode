@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+.sectionLegales{
+    @apply w-screen min-h-[90vh] flex flex-col justify-center py-[100px] lg:py-[150px] items-center bg-[var(--color-bg-black)] px-5;
+    .separateur{
+        @apply h-[3px] w-full max-w-[30%] my-5 bg-[var(--color-main)];
+    }
+    h1{
+        @apply text-white uppercase text-2xl lg:text-6xl;
+        font-family: 'Montserrat';
+    }
+    h2{
+        @apply text-xl font-bold;
+    }
+    p{
+        @apply text-white text-base lg:text-xl;
+        font-family: 'Montserrat';
+    }
+}
