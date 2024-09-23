@@ -26,13 +26,13 @@ export const GridHoverHero = () => {
   const handleMouseLeave = (e) => {
     // @ts-ignore
     const id = `#${e.target.id}`;
-    animate(id, { background: "rgba(129, 140, 248, 0)" }, { duration: 1.5 });
+    animate(id, { background: "rgba(192, 132, 252, 0)" }, { duration: 1.5 });
   };
 
   const handleMouseEnter = (e) => {
     // @ts-ignore
     const id = `#${e.target.id}`;
-    animate(id, { background: "rgba(129, 140, 248, 1)" }, { duration: 0.15 });
+    animate(id, { background: "rgba(192, 132, 252, 1)" }, { duration: 0.15 });
   };
 
   return (
@@ -55,10 +55,10 @@ export const GridHoverHero = () => {
         <h1 className="text-center text-2xl font-black uppercase text-white sm:text-5xl md:text-5xl">
           Cette partie est en cours de development
         </h1>
-        <p className="mb-6 mt-4 max-w-3xl text-center text-lg font-light text-neutral-500 md:text-xl">
+        <p className="mb-6 mt-4 max-w-3xl text-center text-lg font-light text-neutral-300 md:text-xl">
         Notre équipe travaille actuellement à la création de cette section. Toutefois, n'hésitez pas à nous contacter via notre formulaire de contact pour toute question ou demande d'information. Nous restons à votre disposition pour vous accompagner dans vos besoins.
         </p>
-        <button className="pointer-events-auto bg-indigo-400 px-4 py-2 text-xl font-bold uppercase text-neutral-950 mix-blend-difference">
+        <button className="pointer-events-auto bg-purple-400 px-4 py-2 text-xl font-bold uppercase text-zinc-900 mix-blend-difference">
           nous contacter
         </button>
       </div>
