@@ -44,22 +44,22 @@ export default function Contact() {
 
         const initWriter = async () => {
             if (currentStep === 1) {
-                typeWriter("Bonjour, je m'appelle Alex, et je suis votre assistant virtuel.", 'questionText1', 35);
+                typeWriter("Bonjour, je m'appelle Alex, et je suis votre assistant virtuel.", 'questionText1', 25);
                 setTimeout(() => {
-                    typeWriter("Passons directement aux questions, En quoi pourrais-je vous aider?", 'questionText1', 35);
-                }, 5000)
+                    typeWriter("Passons directement aux questions, En quoi pourrais-je vous aider?", 'questionText1', 25);
+                }, 3500)
                 
                 setTimeout(() => {
                     document.querySelector('#options1').classList.remove("hidden");
                     document.querySelector('#options1').classList.add("flex")
                     document.querySelector('#options1').classList.add("animate__fadeIn")
                     
-                }, 7500);
+                }, 5500);
             }
             // Setup glitched animations for further steps
             if (currentStep === 2) {
                 // Inițiem animația de scriere pentru slide-ul 2
-                typeWriter("Vous souhaitez travailler avec notre équipe? Quel genre de projet voulez-vous réaliser?", 'questionText2', 35);
+                typeWriter("Vous souhaitez travailler avec notre équipe? Quel genre de projet voulez-vous réaliser?", 'questionText2', 25);
                 setTimeout(() => {
                     document.querySelector('#options2').classList.remove("hidden");
                     document.querySelector('#options2').classList.add("flex")
@@ -68,7 +68,7 @@ export default function Contact() {
                 }, 4000);
             } else if (currentStep === 3) {
                 // Inițiem animația de scriere pentru slide-ul 3
-                typeWriter("Quelle est votre fourchette de budget pour ce projet?", 'questionText3', 35);
+                typeWriter("Quelle est votre fourchette de budget pour ce projet?", 'questionText3', 25);
                 setTimeout(() => {
                     document.querySelector('#options3').classList.remove("hidden");
                     document.querySelector('#options3').classList.add("flex")
@@ -77,7 +77,7 @@ export default function Contact() {
                 }, 2500);
             } else if (currentStep === 4) {
                 // Inițiem animația de scriere pentru slide-ul 4
-                typeWriter("On n'est pas encore dans les livres d'histoire, alors comment avez-vous entendu parler de nous?", 'questionText4', 35);
+                typeWriter("On n'est pas encore dans les livres d'histoire, alors comment avez-vous entendu parler de nous?", 'questionText4', 25);
                 setTimeout(() => {
                     document.querySelector('#options4').classList.remove("hidden");
                     document.querySelector('#options4').classList.add("flex")
@@ -85,7 +85,7 @@ export default function Contact() {
                     
                 }, 4000);
             } else if (currentStep === 5) {
-                typeWriter("Parfait, maintenant pouvez-vous s'il vous plait nous donner les details qui nous manquent", 'questionText5', 35);
+                typeWriter("Parfait, maintenant pouvez-vous s'il vous plait nous donner les details qui nous manquent", 'questionText5', 25);
                 setTimeout(() => {
                     document.querySelector('#options5').classList.remove("hidden");
                     document.querySelector('#options5').classList.add("flex")
