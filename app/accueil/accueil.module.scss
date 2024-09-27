@@ -247,11 +247,13 @@
             }
         }
         .galleryTitle{
-            @apply absolute z-20 w-full h-full bg-black bg-opacity-90 backdrop-blur-sm flex flex-col justify-center items-center;
-            h1{
-                @apply text-white uppercase text-8xl lg:text-9xl font-extrabold;
-                letter-spacing: 1.5px; 
-                font-family: 'Thunder'
+            @apply absolute z-20 w-full h-full bg-black bg-opacity-40 backdrop-blur-none flex flex-col justify-center items-center;
+            div{
+                h1{
+                    @apply text-white uppercase text-8xl lg:text-9xl font-extrabold;
+                    letter-spacing: 1.5px; 
+                    font-family: 'Thunder'
+                }
             }
 
         }

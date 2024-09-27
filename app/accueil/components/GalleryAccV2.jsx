@@ -85,8 +85,10 @@ export default function GalleryAccV2(){
                         <ElementsUpGallery img1="/img/accueil/gallery/pizzalif.png" img2="/img/accueil/gallery/jby.png" img3="/img/accueil/gallery/perdamaian.png" />
                     </div>
                     <div className={styles.galleryTitle}>
-                        <h1>galerie</h1>
-                        <RoundedSlideButton link="/galerie" text="en voir plus" />
+                        <div className='flex flex-col justify-center items-center py-20 px-20 shadow-xl bg-gradient-radial from-[#000] to-transparent bg-opacity-5 w-full h-full rounded-3xl'>
+                            <h1>galerie</h1>
+                            <RoundedSlideButton link="/galerie" text="en voir plus" />
+                        </div>
                     </div>
                 </div>
             </section>
