@@ -125,15 +125,9 @@ const AboutUsContent = () => {
         <div>
           <h2 className="mb-2 text-xl font-semibold text-white">Services</h2>
           <p className="mb-6 max-w-xs text-sm text-neutral-400">
-          Nos solutions numériques innovantes répondent parfaitement à vos besoins.
+            Nos solutions numériques innovantes répondent parfaitement à vos besoins.
           </p>
         </div>
-        <a
-          href="#"
-          className="flex items-center gap-1 text-xs text-[#B787F5] hover:underline"
-        >
-          En savoir plus <FiArrowRight />
-        </a>
       </div>
       <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3 bg-[var(--color-bg-black)] p-6 lg:col-span-8">
         <a
@@ -302,7 +296,7 @@ const LINKS = [
     // component: CareersContent,
   },
   {
-    text: "Gallerie",
-    href: "/gallerie",
+    text: "Galerie",
+    href: "/galerie",
   },
 ];

@@ -85,8 +85,8 @@ export default function GalleryAccV2(){
                         <ElementsUpGallery img1="/img/accueil/gallery/pizzalif.png" img2="/img/accueil/gallery/jby.png" img3="/img/accueil/gallery/perdamaian.png" />
                     </div>
                     <div className={styles.galleryTitle}>
-                        <h1>gallerie</h1>
-                        <RoundedSlideButton link="#" text="en voir plus" />
+                        <h1>galerie</h1>
+                        <RoundedSlideButton link="/galerie" text="en voir plus" />
                     </div>
                 </div>
             </section>

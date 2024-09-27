@@ -6,7 +6,7 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-export default function Gallerie() {
+export default function Galerie() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
