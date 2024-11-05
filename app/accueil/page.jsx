@@ -17,7 +17,7 @@ export default function Accueil() {
         // Simulăm încărcarea tuturor componentelor
         const loadComponents = setTimeout(() => {
             setLoading(false);
-        }, 1000); // Așteaptă 1 secundă sau ajustează timpul dorit
+        }, 3200); // Așteaptă 1 secundă sau ajustează timpul dorit
 
         return () => clearTimeout(loadComponents);
     }, []);
