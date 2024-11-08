@@ -32,3 +32,12 @@
         }
     }
 }
+
+.titleSayHello{
+    @apply text-white text-5xl lg:text-7xl text-center font-bold uppercase;
+    font-family: 'Thunder';
+}
+.LinksSectionSayHello{
+    @apply flex flex-col justify-center shadow-lg rounded-2xl bg-opacity-30 border-[#2B1942] bg-[#2B1942] backdrop-blur-xl mt-5 p-10 gap-10 items-center border w-full max-w-xl mx-auto;
+    font-family: 'GothamT';
+}

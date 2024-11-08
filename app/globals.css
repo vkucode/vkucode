@@ -17,6 +17,14 @@
   src: url("/fonts/Thunder.ttf");
 }
 
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/Gotham.otf");
+}
+@font-face {
+  font-family: "GothamT";
+  src: url("/fonts/GothamT.otf");
+}
 html,
 body {
   width: 100vw !important;
