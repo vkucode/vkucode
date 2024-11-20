@@ -14,7 +14,7 @@ export const metadata = {
     url: "https://vkucode.com/politique-de-cookies", // URL de la page Politique de cookies
     images: [
       {
-        url: "https://vkucode.com/images/cookies-banner.jpg", // Lien vers une image pertinente
+        url: "https://vkucode.com/images/original.jpg", // Lien vers une image pertinente
         width: 1200,
         height: 630,
         alt: "Politique de Cookies de VKU CODE",
