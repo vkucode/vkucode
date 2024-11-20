@@ -1,7 +1,7 @@
 import React from "react";
 import { MaxWidthWrapper } from "./utils/MaxWidthWrapper";
 import Image from "next/image";
-import { SiInstagram, SiAwwwards, SiLinkedin, SiTiktok } from "react-icons/si";
+import { SiInstagram, SiAwwwards, SiLinkedin, SiTiktok, SiX } from "react-icons/si";
 import Link from "next/link";
 
 export default function Footer(){
@@ -113,8 +113,13 @@ export default function Footer(){
           links={[
             {
               title: "Instagram",
-              href: "/#",
+              href: "https://www.instagram.com/vkucode/",
               Icon: SiInstagram,
+            },
+            {
+              title: "X",
+              href: "https://x.com/vkucode",
+              Icon: SiX,
             },
             {
               title: "TikTok",
@@ -123,12 +128,12 @@ export default function Footer(){
             },
             {
               title: "Linkedin",
-              href: "/#",
+              href: "https://www.linkedin.com/company/vkucode/",
               Icon: SiLinkedin,
             }, 
             {
               title: "Awwwards",
-              href: "/#",
+              href: "https://www.awwwards.com/vkucode/",
               Icon: SiAwwwards,
             }, 
           ]}

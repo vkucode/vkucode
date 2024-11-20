@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import GoogleAdsense from "./components/GoogleAdSense";
 import GoogleAnalytics from "./components/GoogleAnalytics";
+import LinkedInTag from "./components/LinkedIn";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,8 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <GoogleAdsense adClient="ca-pub-7749798055627661" />
       <GoogleAnalytics trackingId="G-7YJQ16HXTK" />
+      <LinkedInTag />
+
       <body className={inter.className}>{children}</body>
     </html>
   );
