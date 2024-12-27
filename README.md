@@ -1,36 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+VKU CODE
+About Us
+VKU CODE is a company specializing in developing innovative digital solutions. We provide web development and mobile application services tailored to meet our clients' specific needs. With extensive experience in the industry, our team creates high-performance, intuitive, and scalable platforms for businesses across various sectors.
 
-## Getting Started
+Services We Offer
+Development of custom websites and interactive web applications.
+Solutions for mobile applications on iOS and Android platforms.
+Integration of modern technologies to optimize user experience.
+Hosting and maintenance for completed projects.
+Our Mission
+We are committed to turning our clients' ideas into successful digital solutions, leveraging best practices and cutting-edge technologies.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For more information, visit our official website: vkucode.com.
